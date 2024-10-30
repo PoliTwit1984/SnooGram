@@ -1,11 +1,11 @@
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from models import db, SubredditConfig, SentPost
-from datetime import datetime
+from db_operations import DatabaseOperations
+from datetime import datetime, timedelta
+from cosmos_db import cosmos_db
 import asyncio
 from apscheduler.schedulers.background import BackgroundScheduler
-from dotenv import load_dotenv
 import praw
 from telegram.ext import Application
 import logging
@@ -14,6 +14,7 @@ import re
 import requests
 from urllib.parse import urlparse
 import hashlib
+from config import Config
 
 # Set up logging with rotation
 log_handler = RotatingFileHandler(
@@ -27,27 +28,27 @@ logging.basicConfig(
     handlers=[log_handler]
 )
 
-load_dotenv()
+def create_app():
+    # Print configuration for debugging
+    Config.print_config()
+    
+    app = Flask(__name__)
+    CORS(app)
+    return app
 
-app = Flask(__name__)
-CORS(app)
-
-# Configure SQLite database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reddit_bot.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db.init_app(app)
+app = create_app()
 
 # Initialize Reddit client
 reddit = praw.Reddit(
-    client_id=os.getenv('REDDIT_CLIENT_ID'),
-    client_secret=os.getenv('REDDIT_CLIENT_SECRET'),
+    client_id=Config.REDDIT_CLIENT_ID,
+    client_secret=Config.REDDIT_CLIENT_SECRET,
     user_agent='RedditTelegramBot/1.0'
 )
 reddit.read_only = True
 
 # Initialize Telegram bot
-telegram_app = Application.builder().token(os.getenv('TELEGRAM_BOT_TOKEN')).build()
-TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
+telegram_app = Application.builder().token(Config.TELEGRAM_BOT_TOKEN).build()
+TELEGRAM_CHANNEL_ID = Config.TELEGRAM_CHANNEL_ID
 
 # Redgifs API configuration
 REDGIFS_TOKEN = None
@@ -75,29 +76,22 @@ def get_redgifs_token():
 
 def is_image_url(url):
     """Check if URL is an image."""
-    # Direct image URLs
     if url.endswith(('.jpg', '.jpeg', '.png', '.gif')):
         return True
-    # Reddit hosted images
     if 'i.redd.it' in url:
         return True
-    # Imgur direct images or albums
     if 'imgur.com' in url:
         return True
     return False
 
 def is_video_url(url, post):
     """Check if URL is a video."""
-    # Reddit hosted videos
     if hasattr(post, 'is_video') and post.is_video:
         return True
-    # Direct video URLs
     if url.endswith(('.mp4', '.webm')):
         return True
-    # Redgifs URLs
     if 'redgifs.com' in url:
         return True
-    # Reddit video URLs
     if 'v.redd.it' in url:
         return True
     return False
@@ -108,13 +102,11 @@ def get_video_url(post):
         if hasattr(post, 'is_video') and post.is_video and hasattr(post, 'media'):
             return post.media['reddit_video']['fallback_url']
         elif 'redgifs.com' in post.url:
-            # Extract video ID from URL
             if '/watch/' in post.url:
                 video_id = post.url.split('/watch/')[-1]
             else:
                 video_id = post.url.split('/')[-1]
             
-            # Get token and make API request
             token = get_redgifs_token()
             if not token:
                 logging.error("Failed to get Redgifs token")
@@ -126,7 +118,6 @@ def get_video_url(post):
             response = requests.get(api_url, headers=headers)
             if response.status_code == 200:
                 data = response.json()
-                # Get HD URL if available, otherwise SD
                 urls = data.get('gif', {}).get('urls', {})
                 return urls.get('hd') or urls.get('sd')
             else:
@@ -140,22 +131,18 @@ def get_video_url(post):
 def download_media(url, post_id, is_video=False):
     """Download media file and return local path"""
     try:
-        # Create a unique filename using post_id and timestamp
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         file_hash = hashlib.md5(url.encode()).hexdigest()[:8]
         
-        # Get file extension from URL
         parsed_url = urlparse(url)
         ext = os.path.splitext(parsed_url.path)[1]
         if not ext:
             ext = '.mp4' if is_video else '.jpg'
         
-        # Create filename and determine directory
         filename = f"{post_id}_{timestamp}_{file_hash}{ext}"
         base_dir = 'downloads/videos' if is_video else 'downloads/pics'
         filepath = os.path.join(base_dir, filename)
         
-        # Download the file
         response = requests.get(url, stream=True)
         response.raise_for_status()
         
@@ -204,96 +191,83 @@ async def send_telegram_video(chat_id, video_path, caption):
 
 def send_to_telegram(subreddit_config):
     try:
-        with app.app_context():  # Ensure we have application context
-            logging.info(f"Processing subreddit: {subreddit_config.subreddit_name}")
-            subreddit = reddit.subreddit(subreddit_config.subreddit_name)
-            
-            # Fetch more posts initially to ensure we have enough to work with after filtering
-            if subreddit_config.filter_type == 'top_day':
-                logging.info("Fetching top posts of the day")
-                posts = list(subreddit.top(time_filter='day', limit=50))
-            elif subreddit_config.filter_type == 'top_week':
-                logging.info("Fetching top posts of the week")
-                posts = list(subreddit.top(time_filter='week', limit=50))
-            elif subreddit_config.filter_type == 'top_month':
-                logging.info("Fetching top posts of the month")
-                posts = list(subreddit.top(time_filter='month', limit=50))
-            else:
-                logging.info("Fetching top posts of the year")
-                posts = list(subreddit.top(time_filter='year', limit=50))
+        logging.info(f"Processing subreddit: {subreddit_config['subreddit_name']}")
+        subreddit = reddit.subreddit(subreddit_config['subreddit_name'])
+        
+        if subreddit_config['filter_type'] == 'top_day':
+            logging.info("Fetching top posts of the day")
+            posts = list(subreddit.top(time_filter='day', limit=50))
+        elif subreddit_config['filter_type'] == 'top_week':
+            logging.info("Fetching top posts of the week")
+            posts = list(subreddit.top(time_filter='week', limit=50))
+        elif subreddit_config['filter_type'] == 'top_month':
+            logging.info("Fetching top posts of the month")
+            posts = list(subreddit.top(time_filter='month', limit=50))
+        else:
+            logging.info("Fetching top posts of the year")
+            posts = list(subreddit.top(time_filter='year', limit=50))
 
-            # Sort posts by upvotes (score) in descending order
-            posts.sort(key=lambda x: x.score, reverse=True)
-            
-            content_found = False
-            for post in posts:
-                logging.info(f"Checking post: {post.id} - Score: {post.score} - URL: {post.url}")
-                # Skip if we've sent this post before
-                if SentPost.is_duplicate(post.id):
-                    logging.info(f"Post {post.id} is a duplicate, skipping")
-                    continue
+        posts.sort(key=lambda x: x.score, reverse=True)
+        
+        content_found = False
+        for post in posts:
+            logging.info(f"Checking post: {post.id} - Score: {post.score} - URL: {post.url}")
+            if DatabaseOperations.is_duplicate_post(post.id):
+                logging.info(f"Post {post.id} is a duplicate, skipping")
+                continue
 
-                if hasattr(post, 'url'):
-                    if is_image_url(post.url):
-                        logging.info(f"Found image post: {post.id} with URL: {post.url}")
-                        # Download the image
-                        local_path = download_media(post.url, post.id, is_video=False)
+            if hasattr(post, 'url'):
+                if is_image_url(post.url):
+                    logging.info(f"Found image post: {post.id} with URL: {post.url}")
+                    local_path = download_media(post.url, post.id, is_video=False)
+                    if local_path:
+                        try:
+                            asyncio.run(send_telegram_photo(
+                                chat_id=TELEGRAM_CHANNEL_ID,
+                                photo_path=local_path,
+                                caption=f"From r/{subreddit_config['subreddit_name']}: {post.title}\nUpvotes: {post.score:,}"
+                            ))
+                            content_found = True
+                        except Exception as e:
+                            logging.error(f"Error sending image post {post.id}: {str(e)}")
+                            continue
+                elif is_video_url(post.url, post):
+                    logging.info(f"Found video post: {post.id}")
+                    video_url = get_video_url(post)
+                    if video_url:
+                        local_path = download_media(video_url, post.id, is_video=True)
                         if local_path:
                             try:
-                                # Send the image using asyncio
-                                asyncio.run(send_telegram_photo(
+                                asyncio.run(send_telegram_video(
                                     chat_id=TELEGRAM_CHANNEL_ID,
-                                    photo_path=local_path,
-                                    caption=f"From r/{subreddit_config.subreddit_name}: {post.title}\nUpvotes: {post.score:,}"
+                                    video_path=local_path,
+                                    caption=f"From r/{subreddit_config['subreddit_name']}: {post.title}\nUpvotes: {post.score:,}"
                                 ))
                                 content_found = True
                             except Exception as e:
-                                logging.error(f"Error sending image post {post.id}: {str(e)}")
+                                logging.error(f"Error sending video post {post.id}: {str(e)}")
                                 continue
-                    elif is_video_url(post.url, post):
-                        logging.info(f"Found video post: {post.id}")
-                        video_url = get_video_url(post)
-                        if video_url:
-                            # Download the video
-                            local_path = download_media(video_url, post.id, is_video=True)
-                            if local_path:
-                                try:
-                                    # Send the video using asyncio
-                                    asyncio.run(send_telegram_video(
-                                        chat_id=TELEGRAM_CHANNEL_ID,
-                                        video_path=local_path,
-                                        caption=f"From r/{subreddit_config.subreddit_name}: {post.title}\nUpvotes: {post.score:,}"
-                                    ))
-                                    content_found = True
-                                except Exception as e:
-                                    logging.error(f"Error sending video post {post.id}: {str(e)}")
-                                    continue
-                        else:
-                            logging.error(f"Could not get video URL for post {post.id}")
-                            continue
                     else:
-                        logging.info(f"Post {post.id} is not an image or video post, skipping")
+                        logging.error(f"Could not get video URL for post {post.id}")
                         continue
+                else:
+                    logging.info(f"Post {post.id} is not an image or video post, skipping")
+                    continue
 
-                if content_found:
-                    # Record that we sent this post
-                    sent_post = SentPost(
-                        post_id=post.id,
-                        subreddit_name=subreddit_config.subreddit_name
-                    )
-                    db.session.add(sent_post)
-                    db.session.commit()
-                    logging.info(f"Successfully processed and recorded post {post.id}")
-                    break
-                    
-            if not content_found:
-                logging.warning(f"No suitable image or video posts found in r/{subreddit_config.subreddit_name}")
-                    
-            subreddit_config.last_check = datetime.now()
-            db.session.commit()
-            logging.info(f"Updated last_check for {subreddit_config.subreddit_name}")
+            if content_found:
+                DatabaseOperations.add_sent_post(post.id, subreddit_config['subreddit_name'])
+                logging.info(f"Successfully processed and recorded post {post.id}")
+                break
+                
+        if not content_found:
+            logging.warning(f"No suitable image or video posts found in r/{subreddit_config['subreddit_name']}")
+                
+        # Update last_check in Cosmos DB
+        subreddit_config['last_check'] = datetime.now().isoformat()
+        DatabaseOperations.update_config(subreddit_config['id'], subreddit_config)
+        logging.info(f"Updated last_check for {subreddit_config['subreddit_name']}")
     except Exception as e:
-        logging.error(f"Error processing subreddit {subreddit_config.subreddit_name}: {str(e)}")
+        logging.error(f"Error processing subreddit {subreddit_config['subreddit_name']}: {str(e)}")
         raise
 
 # Initialize scheduler
@@ -301,12 +275,12 @@ scheduler = BackgroundScheduler()
 scheduler.start()
 
 def schedule_subreddit(config):
-    job_id = f"subreddit_{config.id}"
-    logging.info(f"Scheduling job for subreddit: {config.subreddit_name} with frequency: {config.frequency} minutes")
+    job_id = f"subreddit_{config['id']}"
+    logging.info(f"Scheduling job for subreddit: {config['subreddit_name']} with frequency: {config['frequency']} minutes")
     scheduler.add_job(
         send_to_telegram,
         'interval',
-        minutes=config.frequency,
+        minutes=config['frequency'],
         id=job_id,
         replace_existing=True,
         args=[config]
@@ -334,111 +308,114 @@ def search_subreddits():
 
 @app.route('/api/configs', methods=['GET'])
 def get_configs():
-    configs = SubredditConfig.query.all()
-    return jsonify([config.to_dict() for config in configs])
+    configs = DatabaseOperations.get_all_configs()
+    return jsonify(configs)
 
 @app.route('/api/configs', methods=['POST'])
 def add_config():
     data = request.json
     logging.info(f"Adding new subreddit configuration: {data}")
-    config = SubredditConfig(
-        subreddit_name=data['subreddit_name'],
-        filter_type=data['filter_type'],
-        frequency=data['frequency'],
-        is_active=True
-    )
-    db.session.add(config)
-    db.session.commit()
-    logging.info(f"Successfully added configuration for r/{config.subreddit_name}")
+    
+    config = DatabaseOperations.add_subreddit_config(data)
+    logging.info(f"Successfully added configuration for r/{config['subreddit_name']}")
     
     try:
-        # Send first image immediately
-        logging.info(f"Attempting to send first image for r/{config.subreddit_name}")
+        logging.info(f"Attempting to send first image for r/{config['subreddit_name']}")
         send_to_telegram(config)
-        # Then set up the schedule
         schedule_subreddit(config)
-        logging.info(f"Successfully set up scheduling for r/{config.subreddit_name}")
+        logging.info(f"Successfully set up scheduling for r/{config['subreddit_name']}")
     except Exception as e:
-        logging.error(f"Error in initial setup for r/{config.subreddit_name}: {str(e)}")
+        logging.error(f"Error in initial setup for r/{config['subreddit_name']}: {str(e)}")
     
-    return jsonify(config.to_dict())
+    return jsonify(config)
 
-@app.route('/api/configs/<int:config_id>', methods=['PUT'])
+@app.route('/api/configs/<config_id>', methods=['PUT'])
 def update_config(config_id):
-    config = SubredditConfig.query.get_or_404(config_id)
     data = request.json
+    logging.info(f"Updating configuration ID: {config_id}")
     
-    logging.info(f"Updating configuration for r/{config.subreddit_name}")
-    config.filter_type = data['filter_type']
-    config.frequency = data['frequency']
-    db.session.commit()
+    config = DatabaseOperations.update_config(config_id, data)
     
-    # Update the scheduler if config is active
-    if config.is_active:
+    if config['is_active']:
         schedule_subreddit(config)
     
-    return jsonify(config.to_dict())
+    return jsonify(config)
 
-@app.route('/api/configs/<int:config_id>', methods=['DELETE'])
+@app.route('/api/configs/<config_id>', methods=['DELETE'])
 def delete_config(config_id):
-    config = SubredditConfig.query.get_or_404(config_id)
-    logging.info(f"Deleting configuration for r/{config.subreddit_name}")
-    db.session.delete(config)
-    db.session.commit()
+    logging.info(f"Deleting configuration ID: {config_id}")
+    
+    DatabaseOperations.delete_config(config_id)
     
     job_id = f"subreddit_{config_id}"
     if scheduler.get_job(job_id):
         scheduler.remove_job(job_id)
-        logging.info(f"Removed scheduler job for r/{config.subreddit_name}")
+        logging.info(f"Removed scheduler job for config ID: {config_id}")
     
     return '', 204
 
-@app.route('/api/configs/<int:config_id>/toggle', methods=['POST'])
+@app.route('/api/configs/<config_id>/toggle', methods=['POST'])
 def toggle_config(config_id):
-    config = SubredditConfig.query.get_or_404(config_id)
-    config.is_active = not config.is_active
-    db.session.commit()
-    logging.info(f"Toggled r/{config.subreddit_name} to {'active' if config.is_active else 'inactive'}")
+    config = DatabaseOperations.toggle_config(config_id)
+    logging.info(f"Toggled r/{config['subreddit_name']} to {'active' if config['is_active'] else 'inactive'}")
     
     job_id = f"subreddit_{config_id}"
-    if config.is_active:
+    if config['is_active']:
         try:
-            # Send first image immediately when reactivating
-            logging.info(f"Attempting to send image for reactivated r/{config.subreddit_name}")
+            logging.info(f"Attempting to send image for reactivated r/{config['subreddit_name']}")
             send_to_telegram(config)
-            # Then set up the schedule
             schedule_subreddit(config)
-            logging.info(f"Successfully set up scheduling for reactivated r/{config.subreddit_name}")
+            logging.info(f"Successfully set up scheduling for reactivated r/{config['subreddit_name']}")
         except Exception as e:
-            logging.error(f"Error in reactivation setup for r/{config.subreddit_name}: {str(e)}")
+            logging.error(f"Error in reactivation setup for r/{config['subreddit_name']}: {str(e)}")
     else:
         if scheduler.get_job(job_id):
             scheduler.remove_job(job_id)
-            logging.info(f"Removed scheduler job for deactivated r/{config.subreddit_name}")
+            logging.info(f"Removed scheduler job for deactivated r/{config['subreddit_name']}")
     
-    return jsonify(config.to_dict())
+    return jsonify(config)
 
-@app.route('/api/configs/<int:config_id>/send-now', methods=['POST'])
+@app.route('/api/configs/<config_id>/send-now', methods=['POST'])
 def send_now(config_id):
-    config = SubredditConfig.query.get_or_404(config_id)
-    if not config.is_active:
+    configs = DatabaseOperations.get_all_configs()
+    config = next((c for c in configs if c['id'] == str(config_id)), None)
+    if not config:
+        return jsonify({'error': 'Config not found'}), 404
+    if not config['is_active']:
         return jsonify({'error': 'Config is not active'}), 400
     
     try:
         send_to_telegram(config)
         return jsonify({'message': 'Content sent successfully'})
     except Exception as e:
-        logging.error(f"Error in send-now for r/{config.subreddit_name}: {str(e)}")
+        logging.error(f"Error in send-now for r/{config['subreddit_name']}: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/sent_posts/recent', methods=['GET'])
+def get_recent_sent_posts():
+    try:
+        # Query all sent posts ordered by timestamp
+        query = "SELECT * FROM c ORDER BY c._ts DESC"
+        
+        results = list(cosmos_db.sent_posts_container.query_items(
+            query=query,
+            enable_cross_partition_query=True
+        ))
+        
+        # Convert timestamps to readable format
+        for result in results:
+            if '_ts' in result:
+                result['sent_at_readable'] = datetime.fromtimestamp(result['_ts']).isoformat()
+        
+        return jsonify(results)
+    except Exception as e:
+        logging.error(f"Error getting recent sent posts: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-        # Create downloads directories if they don't exist
-        os.makedirs('downloads/pics', exist_ok=True)
-        os.makedirs('downloads/videos', exist_ok=True)
-        # Reschedule active configs on startup
-        active_configs = SubredditConfig.query.filter_by(is_active=True).all()
-        for config in active_configs:
-            schedule_subreddit(config)
+    os.makedirs('downloads/pics', exist_ok=True)
+    os.makedirs('downloads/videos', exist_ok=True)
+    active_configs = [c for c in DatabaseOperations.get_all_configs() if c['is_active']]
+    for config in active_configs:
+        schedule_subreddit(config)
     app.run(port=8888, debug=True)

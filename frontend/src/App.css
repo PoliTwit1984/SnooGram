@@ -35,10 +35,17 @@
 
 h1 {
   text-align: center;
-  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 2rem;
-  font-size: 2.2rem;
-  text-shadow: 2px 2px 4px var(--shadow-color);
+  font-size: 2.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(74, 169, 255, 0.3);
+  transition: all 0.3s ease;
 }
 
 .config-form {

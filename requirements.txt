@@ -1,8 +1,8 @@
 flask==2.3.3
-flask-sqlalchemy==3.0.5
 flask-cors==4.0.0
 python-telegram-bot==20.4
 praw==7.7.1
 apscheduler==3.10.4
 python-dotenv==1.0.0
 requests==2.31.0
+azure-cosmos==4.5.1

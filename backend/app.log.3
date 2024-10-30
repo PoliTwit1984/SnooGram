@@ -1,0 +1,3186 @@
+2024-10-30 05:03:16,838 - INFO - Found video post: 1gawg5d
+2024-10-30 05:03:16,842 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:03:16,973 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/darkredfuchsiaxenurusunicinctus HTTP/11" 200 None
+2024-10-30 05:03:16,975 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:03:17,093 - DEBUG - https://files.redgifs.com:443 "GET /DarkredFuchsiaXenurusunicinctus.mp4 HTTP/11" 200 61461744
+2024-10-30 05:03:17,689 - INFO - Successfully downloaded media to downloads/videos/1ge9gol_20241030_050316_fff8ab71.mp4
+2024-10-30 05:03:17,690 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:03:17,691 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1ge9gol_20241030_050316_fff8ab71.mp4
+2024-10-30 05:03:17,691 - DEBUG - Entering: get_me
+2024-10-30 05:03:17,696 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:03:17,821 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10b0eaf90>
+2024-10-30 05:03:17,821 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10af755d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 05:03:17,973 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10bf03d10>
+2024-10-30 05:03:17,973 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:17,974 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:17,974 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:17,974 - DEBUG - send_request_body.complete
+2024-10-30 05:03:17,974 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:18,110 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:18 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:18,111 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 05:03:18,111 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:18,111 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:18,111 - DEBUG - response_closed.started
+2024-10-30 05:03:18,111 - DEBUG - response_closed.complete
+2024-10-30 05:03:18,112 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 05:03:18,112 - DEBUG - Exiting: get_me
+2024-10-30 05:03:18,112 - DEBUG - This Bot is already initialized.
+2024-10-30 05:03:18,113 - DEBUG - Entering: send_video
+2024-10-30 05:03:18,157 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:18,158 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:18,158 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:24,173 - DEBUG - send_request_body.complete
+2024-10-30 05:03:24,173 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:24,174 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Request Entity Too Large', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:18 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'70'), (b'Connection', b'close'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:24,174 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 413 Request Entity Too Large"
+2024-10-30 05:03:24,174 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:24,174 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:24,174 - DEBUG - response_closed.started
+2024-10-30 05:03:24,174 - DEBUG - response_closed.complete
+2024-10-30 05:03:24,175 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 05:03:24,175 - DEBUG - Shut down of Updater complete
+2024-10-30 05:03:24,175 - ERROR - Failed to send video to Telegram: Request Entity Too Large (413)
+2024-10-30 05:03:24,175 - ERROR - Error sending video post 1ge9gol: Request Entity Too Large (413)
+2024-10-30 05:03:24,175 - INFO - Checking post: 1ge98kx - Score: 253 - URL: https://www.redgifs.com/watch/frontspecificspittlebug
+2024-10-30 05:03:24,178 - INFO - Post 1ge98kx is a duplicate, skipping
+2024-10-30 05:03:24,178 - INFO - Checking post: 1geqscs - Score: 239 - URL: https://www.redgifs.com/watch/previousweequeensnake
+2024-10-30 05:03:24,179 - INFO - Post 1geqscs is a duplicate, skipping
+2024-10-30 05:03:24,179 - INFO - Checking post: 1gevgug - Score: 210 - URL: https://www.redgifs.com/watch/betterdisfiguredagama
+2024-10-30 05:03:24,179 - INFO - Post 1gevgug is a duplicate, skipping
+2024-10-30 05:03:24,179 - INFO - Checking post: 1gek1hh - Score: 207 - URL: https://www.redgifs.com/watch/magentaactivehammerheadbird
+2024-10-30 05:03:24,179 - INFO - Post 1gek1hh is a duplicate, skipping
+2024-10-30 05:03:24,179 - INFO - Checking post: 1gegrvn - Score: 177 - URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 05:03:24,180 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:24,310 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:24,310 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:24 GMT'
+2024-10-30 05:03:24,310 - INFO - Found image post: 1gegrvn with URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 05:03:24,312 - DEBUG - Starting new HTTPS connection (1): i.redd.it:443
+2024-10-30 05:03:24,456 - DEBUG - https://i.redd.it:443 "GET /wyypqp8i2lxd1.gif HTTP/11" 200 75973198
+2024-10-30 05:03:27,356 - INFO - Successfully downloaded media to downloads/pics/1gegrvn_20241030_050324_c6bad603.gif
+2024-10-30 05:03:27,357 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:03:27,357 - INFO - Attempting to send photo to Telegram - Path: downloads/pics/1gegrvn_20241030_050324_c6bad603.gif
+2024-10-30 05:03:27,358 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:03:27,358 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:03:27,366 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:03:27,366 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:03:27,376 - DEBUG - Entering: get_me
+2024-10-30 05:03:27,376 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:03:27,513 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10bf003e0>
+2024-10-30 05:03:27,513 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10c4c8f50> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 05:03:27,682 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10b05dee0>
+2024-10-30 05:03:27,682 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:27,683 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:27,683 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:27,683 - DEBUG - send_request_body.complete
+2024-10-30 05:03:27,683 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:27,804 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:27,804 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 05:03:27,804 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:27,804 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:27,804 - DEBUG - response_closed.started
+2024-10-30 05:03:27,804 - DEBUG - response_closed.complete
+2024-10-30 05:03:27,804 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 05:03:27,805 - DEBUG - Exiting: get_me
+2024-10-30 05:03:27,805 - DEBUG - This Bot is already initialized.
+2024-10-30 05:03:27,805 - DEBUG - Entering: send_photo
+2024-10-30 05:03:27,838 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:27,839 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:27,839 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:33,549 - DEBUG - send_request_body.complete
+2024-10-30 05:03:33,550 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:33,551 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Request Entity Too Large', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'70'), (b'Connection', b'close'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:33,551 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendPhoto "HTTP/1.1 413 Request Entity Too Large"
+2024-10-30 05:03:33,552 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:33,552 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:33,552 - DEBUG - response_closed.started
+2024-10-30 05:03:33,552 - DEBUG - response_closed.complete
+2024-10-30 05:03:33,553 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 05:03:33,553 - DEBUG - Shut down of Updater complete
+2024-10-30 05:03:33,553 - ERROR - Failed to send photo to Telegram: Request Entity Too Large (413)
+2024-10-30 05:03:33,554 - ERROR - Error sending image post 1gegrvn: Request Entity Too Large (413)
+2024-10-30 05:03:33,554 - INFO - Checking post: 1gertjn - Score: 139 - URL: https://www.redgifs.com/watch/ovalfoolishirukandjijellyfish
+2024-10-30 05:03:33,557 - INFO - Post 1gertjn is a duplicate, skipping
+2024-10-30 05:03:33,557 - INFO - Checking post: 1gerftq - Score: 126 - URL: https://www.redgifs.com/watch/giantcolossalaxisdeer
+2024-10-30 05:03:33,557 - INFO - Post 1gerftq is a duplicate, skipping
+2024-10-30 05:03:33,557 - INFO - Checking post: 1ges0e8 - Score: 86 - URL: https://www.redgifs.com/watch/betterbabyishconch
+2024-10-30 05:03:33,558 - INFO - Post 1ges0e8 is a duplicate, skipping
+2024-10-30 05:03:33,558 - INFO - Checking post: 1geydkn - Score: 85 - URL: https://www.redgifs.com/watch/trivialsuspiciousannelida
+2024-10-30 05:03:33,558 - INFO - Post 1geydkn is a duplicate, skipping
+2024-10-30 05:03:33,558 - INFO - Checking post: 1gebnwz - Score: 49 - URL: https://www.redgifs.com/watch/embarrassedlavendermollies
+2024-10-30 05:03:33,558 - INFO - Post 1gebnwz is a duplicate, skipping
+2024-10-30 05:03:33,558 - INFO - Checking post: 1gelnj6 - Score: 46 - URL: https://www.redgifs.com/watch/glisteningstiffcaterpillar
+2024-10-30 05:03:33,558 - INFO - Post 1gelnj6 is a duplicate, skipping
+2024-10-30 05:03:33,558 - INFO - Checking post: 1gek13a - Score: 44 - URL: https://www.redgifs.com/watch/preciouspalegreenmeadowlark
+2024-10-30 05:03:33,558 - INFO - Post 1gek13a is a duplicate, skipping
+2024-10-30 05:03:33,558 - INFO - Checking post: 1geaequ - Score: 30 - URL: https://www.redgifs.com/watch/straightfriendlyqueenslandgrouper
+2024-10-30 05:03:33,559 - INFO - Post 1geaequ is a duplicate, skipping
+2024-10-30 05:03:33,559 - INFO - Checking post: 1get84u - Score: 30 - URL: https://www.redgifs.com/watch/entireneedyilsamochadegu#rel=user%3Abimboandbola;order=new
+2024-10-30 05:03:33,559 - INFO - Post 1get84u is a duplicate, skipping
+2024-10-30 05:03:33,559 - INFO - Checking post: 1gesix5 - Score: 26 - URL: https://www.redgifs.com/watch/assuredsteelblueasiaticmouflon
+2024-10-30 05:03:33,559 - INFO - Post 1gesix5 is a duplicate, skipping
+2024-10-30 05:03:33,559 - INFO - Checking post: 1geqh92 - Score: 23 - URL: https://www.redgifs.com/watch/unkemptflowerygelada
+2024-10-30 05:03:33,559 - INFO - Post 1geqh92 is a duplicate, skipping
+2024-10-30 05:03:33,559 - INFO - Checking post: 1gefa50 - Score: 8 - URL: https://www.redgifs.com/watch/vitaloutlandishpseudodynerusquadrisectus
+2024-10-30 05:03:33,560 - INFO - Post 1gefa50 is a duplicate, skipping
+2024-10-30 05:03:33,560 - WARNING - No suitable image or video posts found in r/girlsfinishingthejob
+2024-10-30 05:03:33,560 - INFO - Updated last_check for girlsfinishingthejob
+2024-10-30 05:03:33,561 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:04:15 CDT)" executed successfully
+2024-10-30 05:03:37,650 - INFO - Successfully downloaded media to downloads/videos/1gawg5d_20241030_050316_722d0356.mp4
+2024-10-30 05:03:37,652 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:03:37,653 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gawg5d_20241030_050316_722d0356.mp4
+2024-10-30 05:03:37,654 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:03:37,654 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:03:37,662 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:03:37,662 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:03:37,669 - DEBUG - Entering: get_me
+2024-10-30 05:03:37,670 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:03:37,790 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10bf7b170>
+2024-10-30 05:03:37,790 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10bf84350> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 05:03:37,918 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10bf02780>
+2024-10-30 05:03:37,918 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:37,918 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:37,918 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:37,918 - DEBUG - send_request_body.complete
+2024-10-30 05:03:37,918 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:38,034 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:38 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:38,034 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 05:03:38,034 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:38,035 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:38,035 - DEBUG - response_closed.started
+2024-10-30 05:03:38,035 - DEBUG - response_closed.complete
+2024-10-30 05:03:38,035 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 05:03:38,035 - DEBUG - Exiting: get_me
+2024-10-30 05:03:38,035 - DEBUG - This Bot is already initialized.
+2024-10-30 05:03:38,035 - DEBUG - Entering: send_video
+2024-10-30 05:03:38,056 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:38,057 - DEBUG - send_request_headers.complete
+2024-10-30 05:03:38,057 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:03:41,958 - DEBUG - send_request_body.complete
+2024-10-30 05:03:41,958 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:03:41,959 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Request Entity Too Large', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:03:38 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'70'), (b'Connection', b'close'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:03:41,959 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 413 Request Entity Too Large"
+2024-10-30 05:03:41,959 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:03:41,959 - DEBUG - receive_response_body.complete
+2024-10-30 05:03:41,960 - DEBUG - response_closed.started
+2024-10-30 05:03:41,960 - DEBUG - response_closed.complete
+2024-10-30 05:03:41,960 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 05:03:41,960 - DEBUG - Shut down of Updater complete
+2024-10-30 05:03:41,960 - ERROR - Failed to send video to Telegram: Request Entity Too Large (413)
+2024-10-30 05:03:41,961 - ERROR - Error sending video post 1gawg5d: Request Entity Too Large (413)
+2024-10-30 05:03:41,961 - INFO - Checking post: 1g0pzd2 - Score: 2999 - URL: https://www.reddit.com/gallery/1g0pzd2
+2024-10-30 05:03:41,966 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,011 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,012 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:41 GMT'
+2024-10-30 05:03:42,012 - INFO - Post 1g0pzd2 is not an image or video post, skipping
+2024-10-30 05:03:42,013 - INFO - Checking post: 1fvjxbg - Score: 2606 - URL: https://www.reddit.com/gallery/1fvjxbg
+2024-10-30 05:03:42,014 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,057 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,057 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:41 GMT'
+2024-10-30 05:03:42,057 - INFO - Post 1fvjxbg is not an image or video post, skipping
+2024-10-30 05:03:42,058 - INFO - Checking post: 1g7a0gc - Score: 2598 - URL: https://i.redd.it/zv6kq7sy2qvd1.jpeg
+2024-10-30 05:03:42,058 - INFO - Post 1g7a0gc is a duplicate, skipping
+2024-10-30 05:03:42,058 - INFO - Checking post: 1g5nidq - Score: 2324 - URL: https://i.redd.it/sqo6rs6ckavd1.jpeg
+2024-10-30 05:03:42,058 - INFO - Post 1g5nidq is a duplicate, skipping
+2024-10-30 05:03:42,058 - INFO - Checking post: 1g4x3er - Score: 2286 - URL: https://i.redd.it/4qxuj33zs3vd1.jpeg
+2024-10-30 05:03:42,059 - INFO - Post 1g4x3er is a duplicate, skipping
+2024-10-30 05:03:42,059 - INFO - Checking post: 1fue5sb - Score: 2237 - URL: https://i.redd.it/1fzl37l3zbsd1.jpeg
+2024-10-30 05:03:42,059 - INFO - Post 1fue5sb is a duplicate, skipping
+2024-10-30 05:03:42,059 - INFO - Checking post: 1g9g4ld - Score: 2209 - URL: https://www.reddit.com/gallery/1g9g4ld
+2024-10-30 05:03:42,060 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,104 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,105 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,105 - INFO - Post 1g9g4ld is not an image or video post, skipping
+2024-10-30 05:03:42,105 - INFO - Checking post: 1gd3p47 - Score: 2164 - URL: https://www.redgifs.com/watch/rottenproductiveamurratsnake
+2024-10-30 05:03:42,106 - INFO - Post 1gd3p47 is a duplicate, skipping
+2024-10-30 05:03:42,106 - INFO - Checking post: 1g1jdhx - Score: 2157 - URL: https://www.reddit.com/gallery/1g1jdhx
+2024-10-30 05:03:42,106 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,148 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,148 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,148 - INFO - Post 1g1jdhx is not an image or video post, skipping
+2024-10-30 05:03:42,148 - INFO - Checking post: 1gc4hbn - Score: 2148 - URL: https://i.redd.it/cknpffg0uywd1.jpeg
+2024-10-30 05:03:42,149 - INFO - Post 1gc4hbn is a duplicate, skipping
+2024-10-30 05:03:42,149 - INFO - Checking post: 1g216yl - Score: 1996 - URL: https://i.redd.it/xu8fbelb4cud1.jpeg
+2024-10-30 05:03:42,149 - INFO - Post 1g216yl is a duplicate, skipping
+2024-10-30 05:03:42,149 - INFO - Checking post: 1ft168s - Score: 1994 - URL: https://www.reddit.com/gallery/1ft168s
+2024-10-30 05:03:42,150 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,192 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,192 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,192 - INFO - Post 1ft168s is not an image or video post, skipping
+2024-10-30 05:03:42,192 - INFO - Checking post: 1frwcjc - Score: 1981 - URL: https://i.redd.it/jbj6a59eeord1.png
+2024-10-30 05:03:42,193 - INFO - Post 1frwcjc is a duplicate, skipping
+2024-10-30 05:03:42,193 - INFO - Checking post: 1g4bu1d - Score: 1922 - URL: https://www.reddit.com/gallery/1g4bu1d
+2024-10-30 05:03:42,193 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,233 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,233 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,233 - INFO - Post 1g4bu1d is not an image or video post, skipping
+2024-10-30 05:03:42,233 - INFO - Checking post: 1fxgq9s - Score: 1914 - URL: https://www.reddit.com/gallery/1fxgq9s
+2024-10-30 05:03:42,235 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,276 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,276 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,276 - INFO - Post 1fxgq9s is not an image or video post, skipping
+2024-10-30 05:03:42,277 - INFO - Checking post: 1g2o66s - Score: 1817 - URL: https://i.redd.it/rq4jb0z0liud1.jpeg
+2024-10-30 05:03:42,277 - INFO - Post 1g2o66s is a duplicate, skipping
+2024-10-30 05:03:42,277 - INFO - Checking post: 1g9hcuh - Score: 1683 - URL: https://i.redd.it/gxwzhw441bwd1.jpeg
+2024-10-30 05:03:42,278 - INFO - Post 1g9hcuh is a duplicate, skipping
+2024-10-30 05:03:42,278 - INFO - Checking post: 1fu1evh - Score: 1645 - URL: https://i.redd.it/amjnsgf948sd1.jpeg
+2024-10-30 05:03:42,278 - INFO - Post 1fu1evh is a duplicate, skipping
+2024-10-30 05:03:42,278 - INFO - Checking post: 1g6ev2n - Score: 1570 - URL: https://i.redd.it/3deu5hi8shvd1.jpeg
+2024-10-30 05:03:42,278 - INFO - Post 1g6ev2n is a duplicate, skipping
+2024-10-30 05:03:42,278 - INFO - Checking post: 1fwq64g - Score: 1561 - URL: https://www.reddit.com/gallery/1fwq64g
+2024-10-30 05:03:42,279 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,319 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,319 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,319 - INFO - Post 1fwq64g is not an image or video post, skipping
+2024-10-30 05:03:42,319 - INFO - Checking post: 1gdde0v - Score: 1533 - URL: https://i.redd.it/7bd82rxmgbxd1.jpeg
+2024-10-30 05:03:42,320 - INFO - Post 1gdde0v is a duplicate, skipping
+2024-10-30 05:03:42,320 - INFO - Checking post: 1g00924 - Score: 1525 - URL: https://i.redd.it/owu540v4bstd1.jpeg
+2024-10-30 05:03:42,320 - INFO - Post 1g00924 is a duplicate, skipping
+2024-10-30 05:03:42,320 - INFO - Checking post: 1g9xht3 - Score: 1418 - URL: https://i.redd.it/nmmkluxahewd1.jpeg
+2024-10-30 05:03:42,320 - INFO - Post 1g9xht3 is a duplicate, skipping
+2024-10-30 05:03:42,320 - INFO - Checking post: 1g452fs - Score: 1399 - URL: https://i.redd.it/dits2b23kwud1.jpeg
+2024-10-30 05:03:42,320 - INFO - Post 1g452fs is a duplicate, skipping
+2024-10-30 05:03:42,320 - INFO - Checking post: 1fuma83 - Score: 1323 - URL: https://www.reddit.com/gallery/1fuma83
+2024-10-30 05:03:42,321 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,371 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,372 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,372 - INFO - Post 1fuma83 is not an image or video post, skipping
+2024-10-30 05:03:42,372 - INFO - Checking post: 1gb7eoe - Score: 1293 - URL: https://www.reddit.com/gallery/1gb7eoe
+2024-10-30 05:03:42,373 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,417 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,418 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,418 - INFO - Post 1gb7eoe is not an image or video post, skipping
+2024-10-30 05:03:42,418 - INFO - Checking post: 1fz2fbo - Score: 1231 - URL: https://i.redd.it/833fbpbjvjtd1.jpeg
+2024-10-30 05:03:42,418 - INFO - Post 1fz2fbo is a duplicate, skipping
+2024-10-30 05:03:42,418 - INFO - Checking post: 1fxs42x - Score: 1223 - URL: https://www.reddit.com/gallery/1fxs42x
+2024-10-30 05:03:42,419 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,460 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,460 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,460 - INFO - Post 1fxs42x is not an image or video post, skipping
+2024-10-30 05:03:42,460 - INFO - Checking post: 1gb0l80 - Score: 1214 - URL: https://i.redd.it/qooe57tryowd1.jpeg
+2024-10-30 05:03:42,460 - INFO - Post 1gb0l80 is a duplicate, skipping
+2024-10-30 05:03:42,460 - INFO - Checking post: 1g8ird9 - Score: 1156 - URL: https://www.redgifs.com/watch/rustyadmiredcranefly
+2024-10-30 05:03:42,461 - INFO - Post 1g8ird9 is a duplicate, skipping
+2024-10-30 05:03:42,461 - INFO - Checking post: 1gbuu00 - Score: 1124 - URL: https://www.reddit.com/gallery/1gbuu00
+2024-10-30 05:03:42,461 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,501 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,502 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,502 - INFO - Post 1gbuu00 is not an image or video post, skipping
+2024-10-30 05:03:42,502 - INFO - Checking post: 1fs3wm2 - Score: 1099 - URL: https://www.reddit.com/gallery/1fs3wm2
+2024-10-30 05:03:42,503 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:03:42,544 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:03:42,544 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:03:42 GMT'
+2024-10-30 05:03:42,544 - INFO - Post 1fs3wm2 is not an image or video post, skipping
+2024-10-30 05:03:42,544 - INFO - Checking post: 1ft6dl0 - Score: 1083 - URL: https://i.redd.it/rd6exgjmf0sd1.jpeg
+2024-10-30 05:03:42,545 - INFO - Post 1ft6dl0 is a duplicate, skipping
+2024-10-30 05:03:42,545 - WARNING - No suitable image or video posts found in r/wifebutt
+2024-10-30 05:03:42,545 - INFO - Updated last_check for wifebutt
+2024-10-30 05:03:42,545 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:04:15 CDT)" executed successfully
+2024-10-30 05:04:01,265 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,434 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,435 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "OPTIONS /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,437 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,443 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,449 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,451 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,453 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,456 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,458 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:01,462 - INFO - 127.0.0.1 - - [30/Oct/2024 05:04:01] "GET /api/configs HTTP/1.1" 200 -
+2024-10-30 05:04:15,452 - DEBUG - Looking for jobs to run
+2024-10-30 05:04:15,454 - DEBUG - Next wakeup is due at 2024-10-30 05:05:15.450378-05:00 (in 59.996340 seconds)
+2024-10-30 05:04:15,454 - INFO - Running job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:05:15 CDT)" (scheduled at 2024-10-30 05:04:15.450378-05:00)
+2024-10-30 05:04:15,454 - INFO - Running job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:05:15 CDT)" (scheduled at 2024-10-30 05:04:15.450560-05:00)
+2024-10-30 05:04:15,454 - INFO - Processing subreddit: girlsfinishingthejob
+2024-10-30 05:04:15,455 - INFO - Processing subreddit: wifebutt
+2024-10-30 05:04:15,455 - INFO - Fetching top posts of the day
+2024-10-30 05:04:15,455 - INFO - Fetching top posts of the month
+2024-10-30 05:04:15,456 - DEBUG - Fetching: GET https://oauth.reddit.com/r/girlsfinishingthejob/top at 1730282655.456136
+2024-10-30 05:04:15,456 - DEBUG - Fetching: GET https://oauth.reddit.com/r/wifebutt/top at 1730282655.45648
+2024-10-30 05:04:15,456 - DEBUG - Data: None
+2024-10-30 05:04:15,456 - DEBUG - Data: None
+2024-10-30 05:04:15,456 - DEBUG - Params: {'limit': 50, 'raw_json': 1, 't': 'day'}
+2024-10-30 05:04:15,456 - DEBUG - Params: {'limit': 50, 'raw_json': 1, 't': 'month'}
+2024-10-30 05:04:15,830 - DEBUG - https://oauth.reddit.com:443 "GET /r/girlsfinishingthejob/top?t=day&limit=50&raw_json=1 HTTP/11" 200 24150
+2024-10-30 05:04:15,831 - DEBUG - Response: 200 (24150 bytes) (rst-0:rem-149.0:used-1 ratelimit) at 1730282655.83196
+2024-10-30 05:04:15,838 - INFO - Checking post: 1gelyz1 - Score: 7077 - URL: https://www.redgifs.com/watch/uttersvelteamphibian
+2024-10-30 05:04:15,841 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:15,883 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:15,883 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:14 GMT'
+2024-10-30 05:04:15,883 - INFO - Found video post: 1gelyz1
+2024-10-30 05:04:15,885 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:15,996 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/uttersvelteamphibian HTTP/11" 200 None
+2024-10-30 05:04:15,998 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:16,059 - DEBUG - https://files.redgifs.com:443 "GET /UtterSvelteAmphibian.mp4 HTTP/11" 200 42980012
+2024-10-30 05:04:16,662 - DEBUG - https://oauth.reddit.com:443 "GET /r/wifebutt/top?t=month&limit=50&raw_json=1 HTTP/11" 200 49228
+2024-10-30 05:04:16,698 - DEBUG - Response: 200 (49228 bytes) (rst-0:rem-148.0:used-2 ratelimit) at 1730282656.698656
+2024-10-30 05:04:16,756 - INFO - Checking post: 1g9w053 - Score: 5346 - URL: https://www.reddit.com/gallery/1g9w053
+2024-10-30 05:04:16,758 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:16,803 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:16,804 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:16 GMT'
+2024-10-30 05:04:16,804 - INFO - Post 1g9w053 is not an image or video post, skipping
+2024-10-30 05:04:16,804 - INFO - Checking post: 1fv4cfc - Score: 4580 - URL: https://www.reddit.com/gallery/1fv4cfc
+2024-10-30 05:04:16,805 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:16,863 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:16,864 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:16 GMT'
+2024-10-30 05:04:16,864 - INFO - Post 1fv4cfc is not an image or video post, skipping
+2024-10-30 05:04:16,864 - INFO - Checking post: 1ganrp0 - Score: 4207 - URL: https://i.redd.it/ezatz8645lwd1.jpeg
+2024-10-30 05:04:16,865 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:16,927 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:16,927 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:16 GMT'
+2024-10-30 05:04:16,927 - INFO - Found image post: 1ganrp0 with URL: https://i.redd.it/ezatz8645lwd1.jpeg
+2024-10-30 05:04:16,928 - DEBUG - Starting new HTTPS connection (1): i.redd.it:443
+2024-10-30 05:04:17,064 - DEBUG - https://i.redd.it:443 "GET /ezatz8645lwd1.jpeg HTTP/11" 200 159021
+2024-10-30 05:04:17,153 - INFO - Successfully downloaded media to downloads/pics/1ganrp0_20241030_050416_5431c47d.jpeg
+2024-10-30 05:04:17,154 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:17,154 - INFO - Attempting to send photo to Telegram - Path: downloads/pics/1ganrp0_20241030_050416_5431c47d.jpeg
+2024-10-30 05:04:17,155 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:04:17,156 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:04:17,163 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:04:17,163 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:04:17,170 - DEBUG - Entering: get_me
+2024-10-30 05:04:17,170 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:17,296 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10b05e270>
+2024-10-30 05:04:17,296 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10bf5c9d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 05:04:17,411 - INFO - Successfully downloaded media to downloads/videos/1gelyz1_20241030_050415_ba5c8ead.mp4
+2024-10-30 05:04:17,413 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:17,413 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gelyz1_20241030_050415_ba5c8ead.mp4
+2024-10-30 05:04:17,413 - DEBUG - Entering: get_me
+2024-10-30 05:04:17,413 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:17,424 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10af285f0>
+2024-10-30 05:04:17,425 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,425 - DEBUG - send_request_headers.complete
+2024-10-30 05:04:17,425 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:04:17,425 - DEBUG - send_request_body.complete
+2024-10-30 05:04:17,425 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,539 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:04:17 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:04:17,539 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 05:04:17,539 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:04:17,539 - DEBUG - receive_response_body.complete
+2024-10-30 05:04:17,539 - DEBUG - response_closed.started
+2024-10-30 05:04:17,540 - DEBUG - response_closed.complete
+2024-10-30 05:04:17,540 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 05:04:17,540 - DEBUG - Exiting: get_me
+2024-10-30 05:04:17,540 - DEBUG - This Bot is already initialized.
+2024-10-30 05:04:17,540 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10bf036e0>
+2024-10-30 05:04:17,541 - DEBUG - Entering: send_photo
+2024-10-30 05:04:17,541 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10bf5c9d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 05:04:17,542 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,542 - DEBUG - send_request_headers.complete
+2024-10-30 05:04:17,542 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:04:17,685 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10af7aa50>
+2024-10-30 05:04:17,686 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,686 - DEBUG - send_request_headers.complete
+2024-10-30 05:04:17,686 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:04:17,686 - DEBUG - send_request_body.complete
+2024-10-30 05:04:17,686 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,799 - DEBUG - send_request_body.complete
+2024-10-30 05:04:17,799 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,828 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:04:17 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:04:17,828 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 05:04:17,828 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:04:17,828 - DEBUG - receive_response_body.complete
+2024-10-30 05:04:17,828 - DEBUG - response_closed.started
+2024-10-30 05:04:17,828 - DEBUG - response_closed.complete
+2024-10-30 05:04:17,829 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 05:04:17,829 - DEBUG - Exiting: get_me
+2024-10-30 05:04:17,829 - DEBUG - This Updater is already initialized.
+2024-10-30 05:04:17,829 - DEBUG - Entering: send_video
+2024-10-30 05:04:17,843 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 05:04:17,843 - DEBUG - send_request_headers.complete
+2024-10-30 05:04:17,843 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 05:04:18,238 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 10:04:18 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'1208'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 05:04:18,238 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendPhoto "HTTP/1.1 200 OK"
+2024-10-30 05:04:18,238 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 05:04:18,238 - DEBUG - receive_response_body.complete
+2024-10-30 05:04:18,238 - DEBUG - response_closed.started
+2024-10-30 05:04:18,239 - DEBUG - response_closed.complete
+2024-10-30 05:04:18,239 - DEBUG - Message(caption='From r/wifebutt: Wifebutt in the Wild\nUpvotes: 4,207', channel_chat_created=False, chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), date=datetime.datetime(2024, 10, 30, 10, 4, 18, tzinfo=<UTC>), delete_chat_photo=False, group_chat_created=False, message_id=194, photo=(PhotoSize(file_id='AgACAgEAAyEGAASUcC_7AAMbZyHFcEWnLeGkPdyMNQu97QZxL7YAAkKxMRsZEAlF4JeIq_0Hcg0BAAMCAANzAAM2BA', file_size=854, file_unique_id='AQADQrExGxkQCUV4', height=90, width=72), PhotoSize(file_id='AgACAgEAAyEGAASUcC_7AAMbZyHFcEWnLeGkPdyMNQu97QZxL7YAAkKxMRsZEAlF4JeIq_0Hcg0BAAMCAANtAAM2BA', file_size=10468, file_unique_id='AQADQrExGxkQCUVy', height=320, width=257), PhotoSize(file_id='AgACAgEAAyEGAASUcC_7AAMbZyHFcEWnLeGkPdyMNQu97QZxL7YAAkKxMRsZEAlF4JeIq_0Hcg0BAAMCAAN4AAM2BA', file_size=44416, file_unique_id='AQADQrExGxkQCUV9', height=800, width=643), PhotoSize(file_id='AgACAgEAAyEGAASUcC_7AAMbZyHFcEWnLeGkPdyMNQu97QZxL7YAAkKxMRsZEAlF4JeIq_0Hcg0BAAMCAAN3AAM2BA', file_size=82520, file_unique_id='AQADQrExGxkQCUV8', height=1466, width=1179), PhotoSize(file_id='AgACAgEAAyEGAASUcC_7AAMbZyHFcEWnLeGkPdyMNQu97QZxL7YAAkKxMRsZEAlF4JeIq_0Hcg0BAAMCAAN5AAM2BA', file_size=90959, file_unique_id='AQADQrExGxkQCUV-', height=1280, width=1029)), sender_chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), supergroup_chat_created=False)
+2024-10-30 05:04:18,241 - DEBUG - Exiting: send_photo
+2024-10-30 05:04:18,241 - DEBUG - close.started
+2024-10-30 05:04:18,241 - DEBUG - close.complete
+2024-10-30 05:04:18,241 - DEBUG - close.started
+2024-10-30 05:04:18,241 - DEBUG - close.complete
+2024-10-30 05:04:18,242 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 05:04:18,242 - DEBUG - Shut down of Updater complete
+2024-10-30 05:04:18,242 - INFO - Successfully sent photo to Telegram
+2024-10-30 05:04:18,251 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/'
+Request method: 'GET'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'Content-Length': '0'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+No body was attached to the request
+2024-10-30 05:04:18,371 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "GET /dbs/ToDoList/colls/sent_posts/ HTTP/11" 200 None
+2024-10-30 05:04:18,371 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Content-Location': 'REDACTED'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'x-ms-mtls-status': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'etag': '"00006b00-0000-0300-0000-672201280000"'
+    'x-ms-schemaversion': 'REDACTED'
+    'collection-partition-index': 'REDACTED'
+    'collection-service-index': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-item-lsn': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-item-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-max-content-length': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:18 GMT'
+2024-10-30 05:04:18,372 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-partitionkey': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Content-Type': 'application/json'
+    'Accept': 'application/json'
+    'Content-Length': '97'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:18,453 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 201 None
+2024-10-30 05:04:18,454 - INFO - Response status: 201
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'etag': '"0000b006-0000-0300-0000-672204a20000"'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:18 GMT'
+2024-10-30 05:04:18,454 - INFO - Successfully processed and recorded post 1ganrp0
+2024-10-30 05:04:18,454 - INFO - Updated last_check for wifebutt
+2024-10-30 05:04:18,455 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:05:15 CDT)" executed successfully
+2024-10-30 05:04:29,521 - INFO -  * Detected change in '/Users/joewilson/PythonProjects/Snoogram/backend/verify_migration.py', reloading
+2024-10-30 05:04:37,849 - DEBUG - send_request_body.failed exception=WriteError(ClosedResourceError())
+2024-10-30 05:04:37,849 - DEBUG - response_closed.started
+2024-10-30 05:04:37,849 - DEBUG - response_closed.complete
+2024-10-30 05:04:37,850 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:37,850 - ERROR - Failed to send video to Telegram: httpx.WriteError: 
+2024-10-30 05:04:37,851 - ERROR - Error sending video post 1gelyz1: httpx.WriteError: 
+2024-10-30 05:04:37,851 - INFO - Checking post: 1gejrnl - Score: 2576 - URL: https://v3.redgifs.com/watch/graydefensivepika
+2024-10-30 05:04:37,854 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:37,895 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:37,896 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:37 GMT'
+2024-10-30 05:04:37,896 - INFO - Found video post: 1gejrnl
+2024-10-30 05:04:37,897 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:38,018 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/graydefensivepika HTTP/11" 200 None
+2024-10-30 05:04:38,020 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:38,099 - DEBUG - https://files.redgifs.com:443 "GET /GrayDefensivePika.mp4 HTTP/11" 200 20988218
+2024-10-30 05:04:38,795 - INFO - Successfully downloaded media to downloads/videos/1gejrnl_20241030_050438_bb0388cc.mp4
+2024-10-30 05:04:38,796 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:38,796 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gejrnl_20241030_050438_bb0388cc.mp4
+2024-10-30 05:04:38,797 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:04:38,797 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:04:38,807 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 05:04:38,807 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/Snoogram/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 05:04:38,814 - DEBUG - Entering: get_me
+2024-10-30 05:04:38,815 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:38,815 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:38,815 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:38,815 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:38,815 - ERROR - Error sending video post 1gejrnl: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:38,816 - INFO - Checking post: 1gelw33 - Score: 2297 - URL: https://www.redgifs.com/watch/drydarkgraysable
+2024-10-30 05:04:38,816 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:38,863 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:38,863 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:38 GMT'
+2024-10-30 05:04:38,864 - INFO - Found video post: 1gelw33
+2024-10-30 05:04:38,864 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:38,969 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/drydarkgraysable HTTP/11" 200 None
+2024-10-30 05:04:38,972 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:39,041 - DEBUG - https://files.redgifs.com:443 "GET /DryDarkgraySable.mp4 HTTP/11" 200 37310161
+2024-10-30 05:04:40,299 - INFO - Successfully downloaded media to downloads/videos/1gelw33_20241030_050438_cde5cece.mp4
+2024-10-30 05:04:40,300 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:40,300 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gelw33_20241030_050438_cde5cece.mp4
+2024-10-30 05:04:40,300 - DEBUG - Entering: get_me
+2024-10-30 05:04:40,301 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:40,301 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:40,301 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:40,301 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:40,301 - ERROR - Error sending video post 1gelw33: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:40,301 - INFO - Checking post: 1gevvp0 - Score: 1179 - URL: https://www.redgifs.com/watch/medicalplumhen
+2024-10-30 05:04:40,302 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:40,351 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:40,352 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:39 GMT'
+2024-10-30 05:04:40,352 - INFO - Found video post: 1gevvp0
+2024-10-30 05:04:40,353 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:40,519 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/medicalplumhen HTTP/11" 200 None
+2024-10-30 05:04:40,522 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:40,632 - DEBUG - https://files.redgifs.com:443 "GET /MedicalPlumHen.mp4 HTTP/11" 200 10993811
+2024-10-30 05:04:41,175 - INFO - Successfully downloaded media to downloads/videos/1gevvp0_20241030_050440_b1b08286.mp4
+2024-10-30 05:04:41,176 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:41,176 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gevvp0_20241030_050440_b1b08286.mp4
+2024-10-30 05:04:41,176 - DEBUG - Entering: get_me
+2024-10-30 05:04:41,176 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:41,176 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:41,177 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:41,177 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:41,177 - ERROR - Error sending video post 1gevvp0: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:41,177 - INFO - Checking post: 1gesoj7 - Score: 739 - URL: https://www.redgifs.com/watch/lightgreytrickydragonfly
+2024-10-30 05:04:41,178 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:41,219 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:41,220 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:40 GMT'
+2024-10-30 05:04:41,220 - INFO - Found video post: 1gesoj7
+2024-10-30 05:04:41,221 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:41,319 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/lightgreytrickydragonfly HTTP/11" 200 None
+2024-10-30 05:04:41,321 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:41,398 - DEBUG - https://files.redgifs.com:443 "GET /LightgreyTrickyDragonfly.mp4 HTTP/11" 200 22644456
+2024-10-30 05:04:42,112 - INFO - Successfully downloaded media to downloads/videos/1gesoj7_20241030_050441_cad33a13.mp4
+2024-10-30 05:04:42,113 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:42,113 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gesoj7_20241030_050441_cad33a13.mp4
+2024-10-30 05:04:42,113 - DEBUG - Entering: get_me
+2024-10-30 05:04:42,114 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:42,114 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:42,114 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:42,114 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:42,114 - ERROR - Error sending video post 1gesoj7: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:42,115 - INFO - Checking post: 1geuuqp - Score: 438 - URL: https://www.redgifs.com/watch/cheerfulbeigebagworm
+2024-10-30 05:04:42,115 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:42,158 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:42,158 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:41 GMT'
+2024-10-30 05:04:42,158 - INFO - Found video post: 1geuuqp
+2024-10-30 05:04:42,159 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:42,257 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/cheerfulbeigebagworm HTTP/11" 200 None
+2024-10-30 05:04:42,260 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:42,333 - DEBUG - https://files.redgifs.com:443 "GET /CheerfulBeigeBagworm.mp4 HTTP/11" 200 17910521
+2024-10-30 05:04:43,984 - INFO - Successfully downloaded media to downloads/videos/1geuuqp_20241030_050442_ea38486e.mp4
+2024-10-30 05:04:43,986 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:43,986 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geuuqp_20241030_050442_ea38486e.mp4
+2024-10-30 05:04:43,987 - DEBUG - Entering: get_me
+2024-10-30 05:04:43,987 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:43,987 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:43,987 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:43,987 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:43,988 - ERROR - Error sending video post 1geuuqp: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:43,988 - INFO - Checking post: 1geakrb - Score: 401 - URL: https://www.redgifs.com/watch/illinformedthickgalapagoshawk
+2024-10-30 05:04:43,989 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:44,032 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:44,032 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:43 GMT'
+2024-10-30 05:04:44,032 - INFO - Found video post: 1geakrb
+2024-10-30 05:04:44,033 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:44,125 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/illinformedthickgalapagoshawk HTTP/11" 200 None
+2024-10-30 05:04:44,127 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:44,190 - DEBUG - https://files.redgifs.com:443 "GET /IllinformedThickGalapagoshawk.mp4 HTTP/11" 200 33440769
+2024-10-30 05:04:45,452 - INFO - Successfully downloaded media to downloads/videos/1geakrb_20241030_050444_b42dab29.mp4
+2024-10-30 05:04:45,453 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:45,453 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geakrb_20241030_050444_b42dab29.mp4
+2024-10-30 05:04:45,453 - DEBUG - Entering: get_me
+2024-10-30 05:04:45,453 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:45,453 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:45,454 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:45,454 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:45,454 - ERROR - Error sending video post 1geakrb: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:45,454 - INFO - Checking post: 1gerubz - Score: 362 - URL: https://v3.redgifs.com/watch/trickysquarepseudodynerusquadrisectus
+2024-10-30 05:04:45,455 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:45,494 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:45,495 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:44 GMT'
+2024-10-30 05:04:45,495 - INFO - Found video post: 1gerubz
+2024-10-30 05:04:45,496 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:45,592 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/trickysquarepseudodynerusquadrisectus HTTP/11" 200 None
+2024-10-30 05:04:45,597 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:45,692 - DEBUG - https://files.redgifs.com:443 "GET /TrickySquarePseudodynerusquadrisectus.mp4 HTTP/11" 200 8572845
+2024-10-30 05:04:46,111 - INFO - Successfully downloaded media to downloads/videos/1gerubz_20241030_050445_32ca6f29.mp4
+2024-10-30 05:04:46,112 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:46,112 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gerubz_20241030_050445_32ca6f29.mp4
+2024-10-30 05:04:46,112 - DEBUG - Entering: get_me
+2024-10-30 05:04:46,113 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:46,113 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,113 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:46,113 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,114 - ERROR - Error sending video post 1gerubz: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,114 - INFO - Checking post: 1getxhl - Score: 331 - URL: https://www.redgifs.com/watch/purpledemandingboaconstrictor
+2024-10-30 05:04:46,115 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:46,158 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:46,159 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:45 GMT'
+2024-10-30 05:04:46,159 - INFO - Found video post: 1getxhl
+2024-10-30 05:04:46,159 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:46,261 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/purpledemandingboaconstrictor HTTP/11" 200 None
+2024-10-30 05:04:46,265 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:46,341 - DEBUG - https://files.redgifs.com:443 "GET /PurpleDemandingBoaconstrictor.mp4 HTTP/11" 200 8593658
+2024-10-30 05:04:46,712 - INFO - Successfully downloaded media to downloads/videos/1getxhl_20241030_050446_573a642d.mp4
+2024-10-30 05:04:46,714 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:46,714 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1getxhl_20241030_050446_573a642d.mp4
+2024-10-30 05:04:46,714 - DEBUG - Entering: get_me
+2024-10-30 05:04:46,714 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:46,715 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,715 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:46,715 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,715 - ERROR - Error sending video post 1getxhl: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:46,715 - INFO - Checking post: 1ge9gol - Score: 277 - URL: https://v3.redgifs.com/watch/circulardeeppinkamericanbulldog
+2024-10-30 05:04:46,716 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:46,760 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:46,761 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:45 GMT'
+2024-10-30 05:04:46,761 - INFO - Found video post: 1ge9gol
+2024-10-30 05:04:46,762 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:46,857 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/circulardeeppinkamericanbulldog HTTP/11" 200 None
+2024-10-30 05:04:46,863 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:46,926 - DEBUG - https://files.redgifs.com:443 "GET /CircularDeeppinkAmericanbulldog.mp4 HTTP/11" 200 61415883
+2024-10-30 05:04:49,077 - INFO - Successfully downloaded media to downloads/videos/1ge9gol_20241030_050446_fff8ab71.mp4
+2024-10-30 05:04:49,079 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:49,079 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1ge9gol_20241030_050446_fff8ab71.mp4
+2024-10-30 05:04:49,079 - DEBUG - Entering: get_me
+2024-10-30 05:04:49,080 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:49,080 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:49,080 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:49,080 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:49,081 - ERROR - Error sending video post 1ge9gol: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:49,081 - INFO - Checking post: 1ge98kx - Score: 253 - URL: https://www.redgifs.com/watch/frontspecificspittlebug
+2024-10-30 05:04:49,082 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:49,128 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:49,128 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:48 GMT'
+2024-10-30 05:04:49,129 - INFO - Found video post: 1ge98kx
+2024-10-30 05:04:49,130 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:49,230 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/frontspecificspittlebug HTTP/11" 200 None
+2024-10-30 05:04:49,233 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:49,304 - DEBUG - https://files.redgifs.com:443 "GET /FrontSpecificSpittlebug.mp4 HTTP/11" 200 17448364
+2024-10-30 05:04:50,393 - INFO - Successfully downloaded media to downloads/videos/1ge98kx_20241030_050449_67619b79.mp4
+2024-10-30 05:04:50,394 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:50,394 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1ge98kx_20241030_050449_67619b79.mp4
+2024-10-30 05:04:50,394 - DEBUG - Entering: get_me
+2024-10-30 05:04:50,395 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:50,395 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:50,395 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:50,395 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:50,395 - ERROR - Error sending video post 1ge98kx: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:50,395 - INFO - Checking post: 1geqscs - Score: 238 - URL: https://www.redgifs.com/watch/previousweequeensnake
+2024-10-30 05:04:50,397 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:50,439 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:50,439 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:49 GMT'
+2024-10-30 05:04:50,439 - INFO - Found video post: 1geqscs
+2024-10-30 05:04:50,440 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:50,532 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/previousweequeensnake HTTP/11" 200 None
+2024-10-30 05:04:50,535 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:50,600 - DEBUG - https://files.redgifs.com:443 "GET /PreviousWeeQueensnake.mp4 HTTP/11" 200 50070206
+2024-10-30 05:04:52,060 - INFO - Successfully downloaded media to downloads/videos/1geqscs_20241030_050450_2fd81a4e.mp4
+2024-10-30 05:04:52,062 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:52,062 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geqscs_20241030_050450_2fd81a4e.mp4
+2024-10-30 05:04:52,062 - DEBUG - Entering: get_me
+2024-10-30 05:04:52,063 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:52,063 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,064 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:52,064 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,064 - ERROR - Error sending video post 1geqscs: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,064 - INFO - Checking post: 1gevgug - Score: 211 - URL: https://www.redgifs.com/watch/betterdisfiguredagama
+2024-10-30 05:04:52,065 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:52,108 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:52,108 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:52 GMT'
+2024-10-30 05:04:52,109 - INFO - Found video post: 1gevgug
+2024-10-30 05:04:52,110 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:52,208 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/betterdisfiguredagama HTTP/11" 200 None
+2024-10-30 05:04:52,211 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:52,327 - DEBUG - https://files.redgifs.com:443 "GET /BetterDisfiguredAgama.mp4 HTTP/11" 200 2367996
+2024-10-30 05:04:52,429 - INFO - Successfully downloaded media to downloads/videos/1gevgug_20241030_050452_fd40245f.mp4
+2024-10-30 05:04:52,430 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:52,430 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gevgug_20241030_050452_fd40245f.mp4
+2024-10-30 05:04:52,430 - DEBUG - Entering: get_me
+2024-10-30 05:04:52,431 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:52,431 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,431 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:52,431 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,431 - ERROR - Error sending video post 1gevgug: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:52,431 - INFO - Checking post: 1gek1hh - Score: 205 - URL: https://www.redgifs.com/watch/magentaactivehammerheadbird
+2024-10-30 05:04:52,432 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:52,473 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:52,473 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:52 GMT'
+2024-10-30 05:04:52,473 - INFO - Found video post: 1gek1hh
+2024-10-30 05:04:52,474 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:52,568 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/magentaactivehammerheadbird HTTP/11" 200 None
+2024-10-30 05:04:52,570 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:52,636 - DEBUG - https://files.redgifs.com:443 "GET /MagentaActiveHammerheadbird.mp4 HTTP/11" 200 12714600
+2024-10-30 05:04:53,030 - INFO - Successfully downloaded media to downloads/videos/1gek1hh_20241030_050452_bab5f37d.mp4
+2024-10-30 05:04:53,032 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:53,032 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gek1hh_20241030_050452_bab5f37d.mp4
+2024-10-30 05:04:53,032 - DEBUG - Entering: get_me
+2024-10-30 05:04:53,033 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:53,033 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:53,033 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:53,033 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:53,034 - ERROR - Error sending video post 1gek1hh: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:53,034 - INFO - Checking post: 1gegrvn - Score: 174 - URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 05:04:53,035 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:53,076 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:53,076 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:53 GMT'
+2024-10-30 05:04:53,077 - INFO - Found image post: 1gegrvn with URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 05:04:53,078 - DEBUG - Starting new HTTPS connection (1): i.redd.it:443
+2024-10-30 05:04:53,174 - DEBUG - https://i.redd.it:443 "GET /wyypqp8i2lxd1.gif HTTP/11" 200 75973198
+2024-10-30 05:04:55,297 - INFO - Successfully downloaded media to downloads/pics/1gegrvn_20241030_050453_c6bad603.gif
+2024-10-30 05:04:55,298 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:55,298 - INFO - Attempting to send photo to Telegram - Path: downloads/pics/1gegrvn_20241030_050453_c6bad603.gif
+2024-10-30 05:04:55,298 - DEBUG - Entering: get_me
+2024-10-30 05:04:55,299 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:55,299 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,299 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:55,299 - ERROR - Failed to send photo to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,299 - ERROR - Error sending image post 1gegrvn: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,299 - INFO - Checking post: 1gertjn - Score: 138 - URL: https://www.redgifs.com/watch/ovalfoolishirukandjijellyfish
+2024-10-30 05:04:55,300 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:55,342 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:55,342 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:55 GMT'
+2024-10-30 05:04:55,342 - INFO - Found video post: 1gertjn
+2024-10-30 05:04:55,343 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:55,471 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/ovalfoolishirukandjijellyfish HTTP/11" 200 None
+2024-10-30 05:04:55,474 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:55,546 - DEBUG - https://files.redgifs.com:443 "GET /OvalFoolishIrukandjijellyfish.mp4 HTTP/11" 200 2888385
+2024-10-30 05:04:55,684 - INFO - Successfully downloaded media to downloads/videos/1gertjn_20241030_050455_f05ce730.mp4
+2024-10-30 05:04:55,685 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:55,685 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gertjn_20241030_050455_f05ce730.mp4
+2024-10-30 05:04:55,685 - DEBUG - Entering: get_me
+2024-10-30 05:04:55,686 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:55,686 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,686 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:55,686 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,686 - ERROR - Error sending video post 1gertjn: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:55,686 - INFO - Checking post: 1gerftq - Score: 128 - URL: https://www.redgifs.com/watch/giantcolossalaxisdeer
+2024-10-30 05:04:55,687 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:55,726 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:55,726 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:55 GMT'
+2024-10-30 05:04:55,726 - INFO - Found video post: 1gerftq
+2024-10-30 05:04:55,727 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:55,841 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/giantcolossalaxisdeer HTTP/11" 200 None
+2024-10-30 05:04:55,858 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:55,930 - DEBUG - https://files.redgifs.com:443 "GET /GiantColossalAxisdeer.mp4 HTTP/11" 200 31988363
+2024-10-30 05:04:57,004 - INFO - Successfully downloaded media to downloads/videos/1gerftq_20241030_050455_793d78a2.mp4
+2024-10-30 05:04:57,006 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:57,006 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gerftq_20241030_050455_793d78a2.mp4
+2024-10-30 05:04:57,006 - DEBUG - Entering: get_me
+2024-10-30 05:04:57,007 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:57,007 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,007 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:57,007 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,007 - ERROR - Error sending video post 1gerftq: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,007 - INFO - Checking post: 1ges0e8 - Score: 88 - URL: https://www.redgifs.com/watch/betterbabyishconch
+2024-10-30 05:04:57,009 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:57,051 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:57,052 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:56 GMT'
+2024-10-30 05:04:57,052 - INFO - Found video post: 1ges0e8
+2024-10-30 05:04:57,053 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:57,167 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/betterbabyishconch HTTP/11" 200 None
+2024-10-30 05:04:57,169 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:57,268 - DEBUG - https://files.redgifs.com:443 "GET /BetterBabyishConch.mp4 HTTP/11" 200 9742392
+2024-10-30 05:04:57,575 - INFO - Successfully downloaded media to downloads/videos/1ges0e8_20241030_050457_4f6aabba.mp4
+2024-10-30 05:04:57,576 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:57,577 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1ges0e8_20241030_050457_4f6aabba.mp4
+2024-10-30 05:04:57,577 - DEBUG - Entering: get_me
+2024-10-30 05:04:57,577 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:57,577 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,577 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:57,577 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,578 - ERROR - Error sending video post 1ges0e8: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:57,578 - INFO - Checking post: 1geydkn - Score: 84 - URL: https://www.redgifs.com/watch/trivialsuspiciousannelida
+2024-10-30 05:04:57,579 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:57,619 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:57,620 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:57 GMT'
+2024-10-30 05:04:57,620 - INFO - Found video post: 1geydkn
+2024-10-30 05:04:57,621 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:57,714 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/trivialsuspiciousannelida HTTP/11" 200 None
+2024-10-30 05:04:57,717 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:57,782 - DEBUG - https://files.redgifs.com:443 "GET /TrivialSuspiciousAnnelida.mp4 HTTP/11" 200 13675844
+2024-10-30 05:04:58,335 - INFO - Successfully downloaded media to downloads/videos/1geydkn_20241030_050457_236b4988.mp4
+2024-10-30 05:04:58,336 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:58,336 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geydkn_20241030_050457_236b4988.mp4
+2024-10-30 05:04:58,337 - DEBUG - Entering: get_me
+2024-10-30 05:04:58,337 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:58,338 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:58,338 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:58,338 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:58,339 - ERROR - Error sending video post 1geydkn: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:58,339 - INFO - Checking post: 1gebnwz - Score: 53 - URL: https://www.redgifs.com/watch/embarrassedlavendermollies
+2024-10-30 05:04:58,340 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:58,400 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:58,418 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:58 GMT'
+2024-10-30 05:04:58,431 - INFO - Found video post: 1gebnwz
+2024-10-30 05:04:58,474 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:58,564 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/embarrassedlavendermollies HTTP/11" 200 None
+2024-10-30 05:04:58,566 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:58,636 - DEBUG - https://files.redgifs.com:443 "GET /EmbarrassedLavenderMollies.mp4 HTTP/11" 200 31194306
+2024-10-30 05:04:59,572 - INFO - Successfully downloaded media to downloads/videos/1gebnwz_20241030_050458_9e0ffbc6.mp4
+2024-10-30 05:04:59,574 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:04:59,574 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gebnwz_20241030_050458_9e0ffbc6.mp4
+2024-10-30 05:04:59,574 - DEBUG - Entering: get_me
+2024-10-30 05:04:59,575 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:04:59,575 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:59,575 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:04:59,575 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:59,576 - ERROR - Error sending video post 1gebnwz: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:04:59,576 - INFO - Checking post: 1gelnj6 - Score: 46 - URL: https://www.redgifs.com/watch/glisteningstiffcaterpillar
+2024-10-30 05:04:59,577 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:04:59,618 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:04:59,619 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:04:59 GMT'
+2024-10-30 05:04:59,619 - INFO - Found video post: 1gelnj6
+2024-10-30 05:04:59,620 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:04:59,733 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/glisteningstiffcaterpillar HTTP/11" 200 None
+2024-10-30 05:04:59,736 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:04:59,813 - DEBUG - https://files.redgifs.com:443 "GET /GlisteningStiffCaterpillar.mp4 HTTP/11" 200 12582322
+2024-10-30 05:05:00,211 - INFO - Successfully downloaded media to downloads/videos/1gelnj6_20241030_050459_00dd9e13.mp4
+2024-10-30 05:05:00,213 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:00,213 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gelnj6_20241030_050459_00dd9e13.mp4
+2024-10-30 05:05:00,213 - DEBUG - Entering: get_me
+2024-10-30 05:05:00,214 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:00,214 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:00,214 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:00,214 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:00,215 - ERROR - Error sending video post 1gelnj6: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:00,215 - INFO - Checking post: 1gek13a - Score: 37 - URL: https://www.redgifs.com/watch/preciouspalegreenmeadowlark
+2024-10-30 05:05:00,216 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:00,258 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:00,259 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:00 GMT'
+2024-10-30 05:05:00,259 - INFO - Found video post: 1gek13a
+2024-10-30 05:05:00,260 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:00,360 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/preciouspalegreenmeadowlark HTTP/11" 200 None
+2024-10-30 05:05:00,363 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:00,431 - DEBUG - https://files.redgifs.com:443 "GET /PreciousPalegreenMeadowlark.mp4 HTTP/11" 200 26988332
+2024-10-30 05:05:01,377 - INFO - Successfully downloaded media to downloads/videos/1gek13a_20241030_050500_764ec5a3.mp4
+2024-10-30 05:05:01,380 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:01,380 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gek13a_20241030_050500_764ec5a3.mp4
+2024-10-30 05:05:01,381 - DEBUG - Entering: get_me
+2024-10-30 05:05:01,381 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:01,382 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:01,383 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:01,383 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:01,384 - ERROR - Error sending video post 1gek13a: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:01,384 - INFO - Checking post: 1geaequ - Score: 33 - URL: https://www.redgifs.com/watch/straightfriendlyqueenslandgrouper
+2024-10-30 05:05:01,386 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:01,429 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:01,430 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:01 GMT'
+2024-10-30 05:05:01,431 - INFO - Found video post: 1geaequ
+2024-10-30 05:05:01,434 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:01,583 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/straightfriendlyqueenslandgrouper HTTP/11" 200 None
+2024-10-30 05:05:01,585 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:01,649 - DEBUG - https://files.redgifs.com:443 "GET /StraightFriendlyQueenslandgrouper.mp4 HTTP/11" 200 17712459
+2024-10-30 05:05:02,184 - INFO - Successfully downloaded media to downloads/videos/1geaequ_20241030_050501_7aa16af4.mp4
+2024-10-30 05:05:02,185 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:02,185 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geaequ_20241030_050501_7aa16af4.mp4
+2024-10-30 05:05:02,185 - DEBUG - Entering: get_me
+2024-10-30 05:05:02,186 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:02,186 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:02,186 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:02,186 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:02,186 - ERROR - Error sending video post 1geaequ: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:02,186 - INFO - Checking post: 1get84u - Score: 33 - URL: https://www.redgifs.com/watch/entireneedyilsamochadegu#rel=user%3Abimboandbola;order=new
+2024-10-30 05:05:02,187 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:02,228 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:02,229 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:02 GMT'
+2024-10-30 05:05:02,230 - INFO - Found video post: 1get84u
+2024-10-30 05:05:02,231 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:02,331 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/entireneedyilsamochadegu HTTP/11" 200 None
+2024-10-30 05:05:02,333 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:02,399 - DEBUG - https://files.redgifs.com:443 "GET /EntireNeedyIlsamochadegu.mp4 HTTP/11" 200 29509616
+2024-10-30 05:05:03,262 - INFO - Successfully downloaded media to downloads/videos/1get84u_20241030_050502_276115c5.mp4
+2024-10-30 05:05:03,263 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:03,263 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1get84u_20241030_050502_276115c5.mp4
+2024-10-30 05:05:03,263 - DEBUG - Entering: get_me
+2024-10-30 05:05:03,263 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:03,263 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,263 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:03,263 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,264 - ERROR - Error sending video post 1get84u: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,264 - INFO - Checking post: 1geqh92 - Score: 24 - URL: https://www.redgifs.com/watch/unkemptflowerygelada
+2024-10-30 05:05:03,264 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:03,305 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:03,306 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:03 GMT'
+2024-10-30 05:05:03,306 - INFO - Found video post: 1geqh92
+2024-10-30 05:05:03,308 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:03,409 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/unkemptflowerygelada HTTP/11" 200 None
+2024-10-30 05:05:03,412 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:03,488 - DEBUG - https://files.redgifs.com:443 "GET /UnkemptFloweryGelada.mp4 HTTP/11" 200 10663967
+2024-10-30 05:05:03,857 - INFO - Successfully downloaded media to downloads/videos/1geqh92_20241030_050503_708783d5.mp4
+2024-10-30 05:05:03,858 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:03,858 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1geqh92_20241030_050503_708783d5.mp4
+2024-10-30 05:05:03,859 - DEBUG - Entering: get_me
+2024-10-30 05:05:03,859 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:03,859 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,859 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:03,859 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,859 - ERROR - Error sending video post 1geqh92: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:03,859 - INFO - Checking post: 1gesix5 - Score: 23 - URL: https://www.redgifs.com/watch/assuredsteelblueasiaticmouflon
+2024-10-30 05:05:03,860 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:03,901 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:03,902 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-quorum-acked-lsn': 'REDACTED'
+    'x-ms-current-write-quorum': 'REDACTED'
+    'x-ms-current-replica-set-size': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-cosmos-quorum-acked-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:03 GMT'
+2024-10-30 05:05:03,902 - INFO - Found video post: 1gesix5
+2024-10-30 05:05:03,903 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:04,011 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/assuredsteelblueasiaticmouflon HTTP/11" 200 None
+2024-10-30 05:05:04,014 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:04,073 - DEBUG - https://files.redgifs.com:443 "GET /AssuredSteelblueAsiaticmouflon.mp4 HTTP/11" 200 25157263
+2024-10-30 05:05:04,832 - INFO - Successfully downloaded media to downloads/videos/1gesix5_20241030_050504_3f0e17cf.mp4
+2024-10-30 05:05:04,834 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:04,834 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gesix5_20241030_050504_3f0e17cf.mp4
+2024-10-30 05:05:04,834 - DEBUG - Entering: get_me
+2024-10-30 05:05:04,835 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:04,835 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:04,835 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:04,835 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:04,836 - ERROR - Error sending video post 1gesix5: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:04,836 - INFO - Checking post: 1gefa50 - Score: 10 - URL: https://www.redgifs.com/watch/vitaloutlandishpseudodynerusquadrisectus
+2024-10-30 05:05:04,837 - INFO - Request URL: 'https://cosmossnoogram-centralus.documents.azure.com:443/dbs/ToDoList/colls/sent_posts/docs/'
+Request method: 'POST'
+Request headers:
+    'Cache-Control': 'no-cache'
+    'x-ms-version': 'REDACTED'
+    'x-ms-documentdb-query-iscontinuationexpected': 'REDACTED'
+    'x-ms-consistency-level': 'REDACTED'
+    'x-ms-documentdb-isquery': 'REDACTED'
+    'Content-Type': 'application/query+json'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-documentdb-query-enablecrosspartition': 'REDACTED'
+    'x-ms-date': 'REDACTED'
+    'authorization': 'REDACTED'
+    'Accept': 'application/json'
+    'x-ms-cosmos-correlated-activityid': 'REDACTED'
+    'Content-Length': '107'
+    'User-Agent': 'azsdk-python-cosmos/4.5.1 Python/3.12.4 (macOS-15.0.1-arm64-arm-64bit)'
+A body is sent with the request
+2024-10-30 05:05:04,881 - DEBUG - https://cosmossnoogram-centralus.documents.azure.com:443 "POST /dbs/ToDoList/colls/sent_posts/docs/ HTTP/11" 200 None
+2024-10-30 05:05:04,882 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Server': 'Microsoft-HTTPAPI/2.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-activity-id': 'REDACTED'
+    'x-ms-last-state-change-utc': 'REDACTED'
+    'x-ms-resource-quota': 'REDACTED'
+    'x-ms-resource-usage': 'REDACTED'
+    'x-ms-schemaversion': 'REDACTED'
+    'lsn': 'REDACTED'
+    'x-ms-item-count': 'REDACTED'
+    'x-ms-request-charge': 'REDACTED'
+    'x-ms-alt-content-path': 'REDACTED'
+    'x-ms-content-path': 'REDACTED'
+    'x-ms-documentdb-partitionkeyrangeid': 'REDACTED'
+    'x-ms-xp-role': 'REDACTED'
+    'x-ms-cosmos-query-execution-info': 'REDACTED'
+    'x-ms-global-Committed-lsn': 'REDACTED'
+    'x-ms-number-of-read-regions': 'REDACTED'
+    'x-ms-transport-request-id': 'REDACTED'
+    'x-ms-cosmos-llsn': 'REDACTED'
+    'x-ms-session-token': 'REDACTED'
+    'x-ms-request-duration-ms': 'REDACTED'
+    'x-ms-serviceversion': 'REDACTED'
+    'x-ms-cosmos-is-partition-key-delete-pending': 'REDACTED'
+    'x-ms-cosmos-physical-partition-id': 'REDACTED'
+    'x-ms-cosmos-internal-partition-id': 'REDACTED'
+    'x-ms-gatewayversion': 'REDACTED'
+    'Date': 'Wed, 30 Oct 2024 10:05:04 GMT'
+2024-10-30 05:05:04,882 - INFO - Found video post: 1gefa50
+2024-10-30 05:05:04,884 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 05:05:04,986 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/vitaloutlandishpseudodynerusquadrisectus HTTP/11" 200 None
+2024-10-30 05:05:04,989 - DEBUG - Starting new HTTPS connection (1): files.redgifs.com:443
+2024-10-30 05:05:05,053 - DEBUG - https://files.redgifs.com:443 "GET /VitalOutlandishPseudodynerusquadrisectus.mp4 HTTP/11" 200 24856772
+2024-10-30 05:05:05,779 - INFO - Successfully downloaded media to downloads/videos/1gefa50_20241030_050504_17c921d5.mp4
+2024-10-30 05:05:05,781 - DEBUG - Using selector: KqueueSelector
+2024-10-30 05:05:05,781 - INFO - Attempting to send video to Telegram - Path: downloads/videos/1gefa50_20241030_050504_17c921d5.mp4
+2024-10-30 05:05:05,781 - DEBUG - Entering: get_me
+2024-10-30 05:05:05,782 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 05:05:05,782 - DEBUG - connect_tcp.failed exception=RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:05,782 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 05:05:05,782 - ERROR - Failed to send video to Telegram: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:05,783 - ERROR - Error sending video post 1gefa50: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+2024-10-30 05:05:05,783 - WARNING - No suitable image or video posts found in r/girlsfinishingthejob
+2024-10-30 05:05:05,783 - INFO - Updated last_check for girlsfinishingthejob
+2024-10-30 05:05:05,784 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 05:05:15 CDT)" executed successfully
