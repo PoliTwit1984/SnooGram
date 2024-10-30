@@ -1,0 +1,535 @@
+2024-10-30 01:42:26,432 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:26,435 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:26,435 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:26,435 - DEBUG - response_closed.started
+2024-10-30 01:42:26,436 - DEBUG - response_closed.complete
+2024-10-30 01:42:26,436 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:26,437 - DEBUG - Exiting: get_me
+2024-10-30 01:42:26,437 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:26,437 - DEBUG - Entering: send_video
+2024-10-30 01:42:26,437 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:26,438 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:26,438 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:26,438 - DEBUG - send_request_body.complete
+2024-10-30 01:42:26,438 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:26,484 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/secondhandlumpycats HTTP/11" 200 None
+2024-10-30 01:42:26,485 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:26,485 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/SecondhandLumpyCats.mp4
+2024-10-30 01:42:26,485 - DEBUG - This Application is already initialized.
+2024-10-30 01:42:26,485 - DEBUG - Entering: send_video
+2024-10-30 01:42:26,486 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:26,609 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10669cf80>
+2024-10-30 01:42:26,609 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10708d450> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:26,669 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:26 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:26,669 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:26,669 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:26,669 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:26,669 - DEBUG - response_closed.started
+2024-10-30 01:42:26,669 - DEBUG - response_closed.complete
+2024-10-30 01:42:26,670 - DEBUG - close.started
+2024-10-30 01:42:26,670 - DEBUG - close.complete
+2024-10-30 01:42:26,670 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:26,670 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:26,670 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:26,671 - ERROR - Error sending video post 1gelyz1: Wrong file identifier/http url specified
+2024-10-30 01:42:26,671 - INFO - Checking post: 1gejrnl - Score: 2491 - URL: https://v3.redgifs.com/watch/graydefensivepika
+2024-10-30 01:42:26,671 - INFO - Found video post: 1gejrnl
+2024-10-30 01:42:26,672 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:26,739 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x107088170>
+2024-10-30 01:42:26,740 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:26,740 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:26,740 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:26,741 - DEBUG - send_request_body.complete
+2024-10-30 01:42:26,741 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:26,767 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/graydefensivepika HTTP/11" 200 None
+2024-10-30 01:42:26,768 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:26,769 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/GrayDefensivePika.mp4
+2024-10-30 01:42:26,769 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:26,770 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:26,781 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:26,782 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:26,791 - DEBUG - Entering: get_me
+2024-10-30 01:42:26,791 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:26,947 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x11519b590>
+2024-10-30 01:42:26,948 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10708d4d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:26,980 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:26 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:26,980 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:26,981 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:26,981 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:26,981 - DEBUG - response_closed.started
+2024-10-30 01:42:26,982 - DEBUG - response_closed.complete
+2024-10-30 01:42:26,982 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 01:42:26,982 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:26,984 - ERROR - Error sending video post 1geto2m: Wrong file identifier/http url specified
+2024-10-30 01:42:26,984 - INFO - Checking post: 1gervpe - Score: 1536 - URL: https://www.redgifs.com/watch/complicatedglitteringivorybilledwoodpecker
+2024-10-30 01:42:26,985 - INFO - Post 1gervpe is a duplicate, skipping
+2024-10-30 01:42:26,986 - INFO - Checking post: 1gev5g2 - Score: 704 - URL: https://i.redd.it/4eqee24lapxd1.jpeg
+2024-10-30 01:42:26,986 - INFO - Post 1gev5g2 is a duplicate, skipping
+2024-10-30 01:42:26,986 - INFO - Checking post: 1gefvst - Score: 575 - URL: https://i.redd.it/6i35qvzdvkxd1.jpeg
+2024-10-30 01:42:26,987 - INFO - Post 1gefvst is a duplicate, skipping
+2024-10-30 01:42:26,987 - INFO - Checking post: 1ge9p0q - Score: 567 - URL: https://www.reddit.com/gallery/1ge9p0q
+2024-10-30 01:42:26,987 - INFO - Post 1ge9p0q is not an image or video post, skipping
+2024-10-30 01:42:26,987 - INFO - Checking post: 1gevtsb - Score: 405 - URL: https://i.redd.it/bw2b203tfpxd1.gif
+2024-10-30 01:42:26,988 - INFO - Post 1gevtsb is a duplicate, skipping
+2024-10-30 01:42:26,988 - INFO - Checking post: 1geacbf - Score: 375 - URL: https://www.redgifs.com/watch/soulfulplushspreadwing
+2024-10-30 01:42:26,988 - INFO - Found video post: 1geacbf
+2024-10-30 01:42:26,990 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:27,088 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x11519b560>
+2024-10-30 01:42:27,089 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,090 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/soulfulplushspreadwing HTTP/11" 200 None
+2024-10-30 01:42:27,090 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:27,091 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:27,091 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,091 - DEBUG - send_request_body.complete
+2024-10-30 01:42:27,091 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/SoulfulPlushSpreadwing.mp4
+2024-10-30 01:42:27,091 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,092 - DEBUG - Entering: get_me
+2024-10-30 01:42:27,092 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:27,207 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:27,208 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:27,208 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,208 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:27,208 - DEBUG - response_closed.started
+2024-10-30 01:42:27,208 - DEBUG - response_closed.complete
+2024-10-30 01:42:27,208 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:27,209 - DEBUG - Exiting: get_me
+2024-10-30 01:42:27,209 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:27,209 - DEBUG - Entering: send_video
+2024-10-30 01:42:27,209 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,209 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:27,209 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,209 - DEBUG - send_request_body.complete
+2024-10-30 01:42:27,209 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,217 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c4380>
+2024-10-30 01:42:27,217 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10708d4d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:27,363 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c4560>
+2024-10-30 01:42:27,364 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,364 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:27,364 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,364 - DEBUG - send_request_body.complete
+2024-10-30 01:42:27,365 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,470 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:27,470 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:27,470 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,470 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:27,471 - DEBUG - response_closed.started
+2024-10-30 01:42:27,471 - DEBUG - response_closed.complete
+2024-10-30 01:42:27,471 - DEBUG - close.started
+2024-10-30 01:42:27,471 - DEBUG - close.complete
+2024-10-30 01:42:27,471 - DEBUG - close.started
+2024-10-30 01:42:27,472 - DEBUG - close.complete
+2024-10-30 01:42:27,472 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:27,472 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:27,472 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:27,473 - ERROR - Error sending video post 1gejrnl: Wrong file identifier/http url specified
+2024-10-30 01:42:27,473 - INFO - Checking post: 1gelw33 - Score: 2227 - URL: https://www.redgifs.com/watch/drydarkgraysable
+2024-10-30 01:42:27,474 - INFO - Found video post: 1gelw33
+2024-10-30 01:42:27,476 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:27,596 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/drydarkgraysable HTTP/11" 200 None
+2024-10-30 01:42:27,597 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:27,597 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/DryDarkgraySable.mp4
+2024-10-30 01:42:27,598 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:27,598 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:27,607 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:27,608 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:27,616 - DEBUG - Entering: get_me
+2024-10-30 01:42:27,616 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:27,737 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c6390>
+2024-10-30 01:42:27,737 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1151a9550> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:27,867 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c6360>
+2024-10-30 01:42:27,868 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:27,868 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:27,868 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:27,869 - DEBUG - send_request_body.complete
+2024-10-30 01:42:27,869 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,068 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:28 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:28,069 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:28,069 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,070 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:28,070 - DEBUG - response_closed.started
+2024-10-30 01:42:28,070 - DEBUG - response_closed.complete
+2024-10-30 01:42:28,071 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:28,071 - DEBUG - Exiting: get_me
+2024-10-30 01:42:28,071 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:28,071 - DEBUG - Entering: send_video
+2024-10-30 01:42:28,072 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,073 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:28,073 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,073 - DEBUG - send_request_body.complete
+2024-10-30 01:42:28,073 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,315 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:28 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:28,316 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:28,316 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,316 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:28,316 - DEBUG - response_closed.started
+2024-10-30 01:42:28,317 - DEBUG - response_closed.complete
+2024-10-30 01:42:28,317 - DEBUG - close.started
+2024-10-30 01:42:28,318 - DEBUG - close.complete
+2024-10-30 01:42:28,318 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:28,318 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:28,318 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:28,319 - ERROR - Error sending video post 1gelw33: Wrong file identifier/http url specified
+2024-10-30 01:42:28,319 - INFO - Checking post: 1gevvp0 - Score: 1030 - URL: https://www.redgifs.com/watch/medicalplumhen
+2024-10-30 01:42:28,321 - INFO - Post 1gevvp0 is a duplicate, skipping
+2024-10-30 01:42:28,321 - INFO - Checking post: 1gesoj7 - Score: 692 - URL: https://www.redgifs.com/watch/lightgreytrickydragonfly
+2024-10-30 01:42:28,321 - INFO - Found video post: 1gesoj7
+2024-10-30 01:42:28,323 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:28,425 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/lightgreytrickydragonfly HTTP/11" 200 None
+2024-10-30 01:42:28,426 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:28,426 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/LightgreyTrickyDragonfly.mp4
+2024-10-30 01:42:28,427 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:28,428 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:28,439 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:28,440 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:28,448 - DEBUG - Entering: get_me
+2024-10-30 01:42:28,450 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:28,637 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10669cf80>
+2024-10-30 01:42:28,638 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1151a9c50> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:28,771 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x106aeb950>
+2024-10-30 01:42:28,772 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,772 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:28,772 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,772 - DEBUG - send_request_body.complete
+2024-10-30 01:42:28,773 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,894 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:28 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:28,895 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:28,895 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,895 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:28,895 - DEBUG - response_closed.started
+2024-10-30 01:42:28,896 - DEBUG - response_closed.complete
+2024-10-30 01:42:28,896 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:28,896 - DEBUG - Exiting: get_me
+2024-10-30 01:42:28,896 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:28,896 - DEBUG - Entering: send_video
+2024-10-30 01:42:28,897 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:28,898 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:28,898 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:28,898 - DEBUG - send_request_body.complete
+2024-10-30 01:42:28,898 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:29,132 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:29 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:29,133 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:29,133 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:29,133 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:29,133 - DEBUG - response_closed.started
+2024-10-30 01:42:29,134 - DEBUG - response_closed.complete
+2024-10-30 01:42:29,134 - DEBUG - close.started
+2024-10-30 01:42:29,134 - DEBUG - close.complete
+2024-10-30 01:42:29,135 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:29,135 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:29,135 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:29,136 - ERROR - Error sending video post 1gesoj7: Wrong file identifier/http url specified
+2024-10-30 01:42:29,136 - INFO - Checking post: 1geuuqp - Score: 408 - URL: https://www.redgifs.com/watch/cheerfulbeigebagworm
+2024-10-30 01:42:29,137 - INFO - Post 1geuuqp is a duplicate, skipping
+2024-10-30 01:42:29,137 - INFO - Checking post: 1geakrb - Score: 393 - URL: https://www.redgifs.com/watch/illinformedthickgalapagoshawk
+2024-10-30 01:42:29,137 - INFO - Found video post: 1geakrb
+2024-10-30 01:42:29,139 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:29,234 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/illinformedthickgalapagoshawk HTTP/11" 200 None
+2024-10-30 01:42:29,235 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:29,235 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/IllinformedThickGalapagoshawk.mp4
+2024-10-30 01:42:29,236 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:29,236 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:29,249 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:29,249 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:29,256 - DEBUG - Entering: get_me
+2024-10-30 01:42:29,256 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:29,383 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c5340>
+2024-10-30 01:42:29,383 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x106b58550> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:29,571 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c5610>
+2024-10-30 01:42:29,572 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:29,572 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:29,573 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:29,573 - DEBUG - send_request_body.complete
+2024-10-30 01:42:29,573 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:29,688 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:29 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:29,688 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:29,688 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:29,689 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:29,689 - DEBUG - response_closed.started
+2024-10-30 01:42:29,689 - DEBUG - response_closed.complete
+2024-10-30 01:42:29,689 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:29,689 - DEBUG - Exiting: get_me
+2024-10-30 01:42:29,689 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:29,690 - DEBUG - Entering: send_video
+2024-10-30 01:42:29,690 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:29,691 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:29,691 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:29,691 - DEBUG - send_request_body.complete
+2024-10-30 01:42:29,691 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:32,365 - DEBUG - receive_response_headers.failed exception=ReadError(ClosedResourceError())
+2024-10-30 01:42:32,366 - DEBUG - response_closed.started
+2024-10-30 01:42:32,366 - DEBUG - response_closed.complete
+2024-10-30 01:42:32,366 - DEBUG - close.started
+2024-10-30 01:42:32,366 - DEBUG - close.complete
+2024-10-30 01:42:32,366 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:32,366 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:32,367 - ERROR - Failed to send video to Telegram: httpx.ReadError: 
+2024-10-30 01:42:32,367 - ERROR - Error sending video post 1geacbf: httpx.ReadError: 
+2024-10-30 01:42:32,367 - INFO - Checking post: 1getll5 - Score: 323 - URL: https://i.redd.it/rmfaphilxoxd1.jpeg
+2024-10-30 01:42:32,368 - INFO - Post 1getll5 is a duplicate, skipping
+2024-10-30 01:42:32,368 - INFO - Checking post: 1gevhal - Score: 298 - URL: https://i.redd.it/kxqb2id5dpxd1.jpeg
+2024-10-30 01:42:32,369 - INFO - Post 1gevhal is a duplicate, skipping
+2024-10-30 01:42:32,369 - INFO - Checking post: 1gehpyw - Score: 238 - URL: https://i.redd.it/7roklbx7alxd1.jpeg
+2024-10-30 01:42:32,369 - INFO - Post 1gehpyw is a duplicate, skipping
+2024-10-30 01:42:32,369 - INFO - Checking post: 1gezpif - Score: 236 - URL: https://i.redd.it/h4c0ijez8qxd1.jpeg
+2024-10-30 01:42:32,369 - INFO - Post 1gezpif is a duplicate, skipping
+2024-10-30 01:42:32,369 - INFO - Checking post: 1gejtaa - Score: 139 - URL: https://i.redd.it/m7st6vkcslxd1.jpeg
+2024-10-30 01:42:32,370 - INFO - Post 1gejtaa is a duplicate, skipping
+2024-10-30 01:42:32,370 - INFO - Checking post: 1geda7k - Score: 115 - URL: https://www.redgifs.com/watch/elderlyspringgreenaxolotl
+2024-10-30 01:42:32,370 - INFO - Post 1geda7k is a duplicate, skipping
+2024-10-30 01:42:32,370 - INFO - Checking post: 1gee7hl - Score: 113 - URL: https://www.redgifs.com/watch/obviousbisquequagga
+2024-10-30 01:42:32,371 - INFO - Found video post: 1gee7hl
+2024-10-30 01:42:32,372 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:32,463 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/obviousbisquequagga HTTP/11" 200 None
+2024-10-30 01:42:32,464 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:32,464 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/ObviousBisqueQuagga.mp4
+2024-10-30 01:42:32,465 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:32,466 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:32,475 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:32,476 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:32,481 - DEBUG - Entering: get_me
+2024-10-30 01:42:32,481 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:32,603 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x11519b590>
+2024-10-30 01:42:32,603 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1151a85d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:32,741 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x11519b1a0>
+2024-10-30 01:42:32,742 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:32,742 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:32,742 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:32,742 - DEBUG - send_request_body.complete
+2024-10-30 01:42:32,742 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:32,860 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:32 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:32,861 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:32,861 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:32,861 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:32,861 - DEBUG - response_closed.started
+2024-10-30 01:42:32,861 - DEBUG - response_closed.complete
+2024-10-30 01:42:32,862 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:32,862 - DEBUG - Exiting: get_me
+2024-10-30 01:42:32,862 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:32,862 - DEBUG - Entering: send_video
+2024-10-30 01:42:32,863 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:32,863 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:32,863 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:32,863 - DEBUG - send_request_body.complete
+2024-10-30 01:42:32,863 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:33,251 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:33 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'547'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:33,256 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 200 OK"
+2024-10-30 01:42:33,256 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:33,256 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:33,256 - DEBUG - response_closed.started
+2024-10-30 01:42:33,256 - DEBUG - response_closed.complete
+2024-10-30 01:42:33,257 - DEBUG - Message(caption='From r/wifebutt: Would ya get under this wifebutt?\nUpvotes: 113', channel_chat_created=False, chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), date=datetime.datetime(2024, 10, 30, 6, 42, 33, tzinfo=<UTC>), delete_chat_photo=False, group_chat_created=False, message_id=100, sender_chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), supergroup_chat_created=False, video=Video(duration=6, file_id='BAACAgQAAyEGAASUcC_7AANhZyHVH4VjYszNCV4NdOoav4xe-PEAAloGAAIucxVRfZPruTwabJk2BA', file_name='ObviousBisqueQuagga.mp4', file_size=3630911, file_unique_id='AgADWgYAAi5zFVE', height=2156, mime_type='video/mp4', width=1080))
+2024-10-30 01:42:33,258 - DEBUG - Exiting: send_video
+2024-10-30 01:42:33,258 - DEBUG - close.started
+2024-10-30 01:42:33,258 - DEBUG - close.complete
+2024-10-30 01:42:33,258 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:33,258 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:33,258 - INFO - Successfully sent video to Telegram
+2024-10-30 01:42:33,261 - INFO - Successfully processed and recorded post 1gee7hl
+2024-10-30 01:42:33,261 - INFO - Updated last_check for wifebutt
+2024-10-30 01:42:33,261 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 01:43:25 CDT)" executed successfully
+2024-10-30 01:42:34,694 - DEBUG - receive_response_headers.failed exception=ReadError(ClosedResourceError())
+2024-10-30 01:42:34,696 - DEBUG - response_closed.started
+2024-10-30 01:42:34,696 - DEBUG - response_closed.complete
+2024-10-30 01:42:34,697 - DEBUG - This Application is already shut down. Returning.
+2024-10-30 01:42:34,698 - ERROR - Failed to send video to Telegram: httpx.ReadError: 
+2024-10-30 01:42:34,700 - ERROR - Error sending video post 1geakrb: httpx.ReadError: 
+2024-10-30 01:42:34,700 - INFO - Checking post: 1gerubz - Score: 346 - URL: https://v3.redgifs.com/watch/trickysquarepseudodynerusquadrisectus
+2024-10-30 01:42:34,704 - INFO - Post 1gerubz is a duplicate, skipping
+2024-10-30 01:42:34,704 - INFO - Checking post: 1getxhl - Score: 312 - URL: https://www.redgifs.com/watch/purpledemandingboaconstrictor
+2024-10-30 01:42:34,704 - INFO - Post 1getxhl is a duplicate, skipping
+2024-10-30 01:42:34,704 - INFO - Checking post: 1ge9gol - Score: 273 - URL: https://v3.redgifs.com/watch/circulardeeppinkamericanbulldog
+2024-10-30 01:42:34,704 - INFO - Found video post: 1ge9gol
+2024-10-30 01:42:34,707 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:34,887 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/circulardeeppinkamericanbulldog HTTP/11" 200 None
+2024-10-30 01:42:34,887 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:34,888 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/CircularDeeppinkAmericanbulldog.mp4
+2024-10-30 01:42:34,888 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:34,889 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:34,898 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:34,899 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:34,907 - DEBUG - Entering: get_me
+2024-10-30 01:42:34,908 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:35,032 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x107355670>
+2024-10-30 01:42:35,033 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1151a8a50> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:35,166 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x107356de0>
+2024-10-30 01:42:35,170 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:35,173 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:35,173 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:35,173 - DEBUG - send_request_body.complete
+2024-10-30 01:42:35,183 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:35,337 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:35 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:35,340 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:35,343 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:35,344 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:35,345 - DEBUG - response_closed.started
+2024-10-30 01:42:35,345 - DEBUG - response_closed.complete
+2024-10-30 01:42:35,347 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:35,348 - DEBUG - Exiting: get_me
+2024-10-30 01:42:35,348 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:35,348 - DEBUG - Entering: send_video
+2024-10-30 01:42:35,349 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:35,351 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:35,351 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:35,352 - DEBUG - send_request_body.complete
+2024-10-30 01:42:35,352 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:35,602 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:35 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:35,603 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:35,604 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:35,604 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:35,604 - DEBUG - response_closed.started
+2024-10-30 01:42:35,605 - DEBUG - response_closed.complete
+2024-10-30 01:42:35,606 - DEBUG - close.started
+2024-10-30 01:42:35,606 - DEBUG - close.complete
+2024-10-30 01:42:35,607 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:35,608 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:35,608 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:35,611 - ERROR - Error sending video post 1ge9gol: Wrong file identifier/http url specified
+2024-10-30 01:42:35,612 - INFO - Checking post: 1ge98kx - Score: 259 - URL: https://www.redgifs.com/watch/frontspecificspittlebug
+2024-10-30 01:42:35,613 - INFO - Post 1ge98kx is a duplicate, skipping
+2024-10-30 01:42:35,613 - INFO - Checking post: 1geqscs - Score: 223 - URL: https://www.redgifs.com/watch/previousweequeensnake
+2024-10-30 01:42:35,614 - INFO - Found video post: 1geqscs
+2024-10-30 01:42:35,616 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:35,708 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/previousweequeensnake HTTP/11" 200 None
+2024-10-30 01:42:35,708 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:35,709 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/PreviousWeeQueensnake.mp4
+2024-10-30 01:42:35,709 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:35,709 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:35,716 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:35,716 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:35,725 - DEBUG - Entering: get_me
+2024-10-30 01:42:35,726 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:35,870 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c4ce0>
+2024-10-30 01:42:35,870 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1151a8c50> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:35,997 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1067bbc50>
+2024-10-30 01:42:35,998 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:35,998 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:35,998 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:35,998 - DEBUG - send_request_body.complete
+2024-10-30 01:42:35,998 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,114 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:36 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:36,115 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:36,115 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,115 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:36,116 - DEBUG - response_closed.started
+2024-10-30 01:42:36,116 - DEBUG - response_closed.complete
+2024-10-30 01:42:36,117 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:36,117 - DEBUG - Exiting: get_me
+2024-10-30 01:42:36,117 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:36,117 - DEBUG - Entering: send_video
+2024-10-30 01:42:36,118 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,119 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:36,119 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,119 - DEBUG - send_request_body.complete
+2024-10-30 01:42:36,119 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,382 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:36 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:36,383 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:36,383 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,383 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:36,383 - DEBUG - response_closed.started
+2024-10-30 01:42:36,383 - DEBUG - response_closed.complete
+2024-10-30 01:42:36,383 - DEBUG - close.started
+2024-10-30 01:42:36,384 - DEBUG - close.complete
+2024-10-30 01:42:36,384 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:36,384 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:36,384 - ERROR - Failed to send video to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:36,384 - ERROR - Error sending video post 1geqscs: Wrong file identifier/http url specified
+2024-10-30 01:42:36,384 - INFO - Checking post: 1gek1hh - Score: 204 - URL: https://www.redgifs.com/watch/magentaactivehammerheadbird
+2024-10-30 01:42:36,385 - INFO - Post 1gek1hh is a duplicate, skipping
+2024-10-30 01:42:36,385 - INFO - Checking post: 1gevgug - Score: 199 - URL: https://www.redgifs.com/watch/betterdisfiguredagama
+2024-10-30 01:42:36,385 - INFO - Post 1gevgug is a duplicate, skipping
+2024-10-30 01:42:36,385 - INFO - Checking post: 1gegrvn - Score: 169 - URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 01:42:36,385 - INFO - Found image post: 1gegrvn with URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 01:42:36,386 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:36,386 - INFO - Attempting to send photo to Telegram - URL: https://i.redd.it/wyypqp8i2lxd1.gif
+2024-10-30 01:42:36,386 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:36,386 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:36,393 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:36,394 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:36,399 - DEBUG - Entering: get_me
+2024-10-30 01:42:36,399 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:36,531 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c7590>
+2024-10-30 01:42:36,531 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x106b53250> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:36,689 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c75f0>
+2024-10-30 01:42:36,689 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,689 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:36,689 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,689 - DEBUG - send_request_body.complete
+2024-10-30 01:42:36,689 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,809 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:36 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:36,809 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:36,809 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,809 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:36,809 - DEBUG - response_closed.started
+2024-10-30 01:42:36,809 - DEBUG - response_closed.complete
+2024-10-30 01:42:36,810 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:36,810 - DEBUG - Exiting: get_me
+2024-10-30 01:42:36,810 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:36,810 - DEBUG - Entering: send_photo
+2024-10-30 01:42:36,810 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:36,811 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:36,811 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:36,811 - DEBUG - send_request_body.complete
+2024-10-30 01:42:36,811 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:37,041 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:37 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'99'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:37,041 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendPhoto "HTTP/1.1 400 Bad Request"
+2024-10-30 01:42:37,041 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:37,041 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:37,042 - DEBUG - response_closed.started
+2024-10-30 01:42:37,042 - DEBUG - response_closed.complete
+2024-10-30 01:42:37,042 - DEBUG - close.started
+2024-10-30 01:42:37,042 - DEBUG - close.complete
+2024-10-30 01:42:37,042 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:37,043 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:37,043 - ERROR - Failed to send photo to Telegram: Wrong file identifier/http url specified
+2024-10-30 01:42:37,043 - ERROR - Error sending image post 1gegrvn: Wrong file identifier/http url specified
+2024-10-30 01:42:37,043 - INFO - Checking post: 1gertjn - Score: 128 - URL: https://www.redgifs.com/watch/ovalfoolishirukandjijellyfish
+2024-10-30 01:42:37,044 - INFO - Found video post: 1gertjn
+2024-10-30 01:42:37,045 - DEBUG - Starting new HTTPS connection (1): api.redgifs.com:443
+2024-10-30 01:42:37,143 - DEBUG - https://api.redgifs.com:443 "GET /v2/gifs/ovalfoolishirukandjijellyfish HTTP/11" 200 None
+2024-10-30 01:42:37,144 - DEBUG - Using selector: KqueueSelector
+2024-10-30 01:42:37,144 - INFO - Attempting to send video to Telegram - URL: https://files.redgifs.com/OvalFoolishIrukandjijellyfish.mp4
+2024-10-30 01:42:37,145 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:37,145 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:37,154 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-10-30 01:42:37,154 - DEBUG - load_verify_locations cafile='/Users/joewilson/PythonProjects/redditbot/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-10-30 01:42:37,162 - DEBUG - Entering: get_me
+2024-10-30 01:42:37,162 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-10-30 01:42:37,296 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10708abd0>
+2024-10-30 01:42:37,296 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x106b5b4d0> server_hostname='api.telegram.org' timeout=5.0
+2024-10-30 01:42:37,434 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1151c6c90>
+2024-10-30 01:42:37,434 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:37,435 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:37,435 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:37,435 - DEBUG - send_request_body.complete
+2024-10-30 01:42:37,435 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:37,551 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:37 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'254'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:37,551 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/getMe "HTTP/1.1 200 OK"
+2024-10-30 01:42:37,551 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:37,551 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:37,551 - DEBUG - response_closed.started
+2024-10-30 01:42:37,551 - DEBUG - response_closed.complete
+2024-10-30 01:42:37,551 - DEBUG - User(api_kwargs={'can_connect_to_business': False, 'has_main_web_app': False}, can_join_groups=True, can_read_all_group_messages=False, first_name='RedditBot', id=7867694458, is_bot=True, supports_inline_queries=False, username='RedditImage_bot')
+2024-10-30 01:42:37,551 - DEBUG - Exiting: get_me
+2024-10-30 01:42:37,551 - DEBUG - This Bot is already initialized.
+2024-10-30 01:42:37,551 - DEBUG - Entering: send_video
+2024-10-30 01:42:37,552 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:37,552 - DEBUG - send_request_headers.complete
+2024-10-30 01:42:37,552 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-30 01:42:37,552 - DEBUG - send_request_body.complete
+2024-10-30 01:42:37,552 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-30 01:42:40,920 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Wed, 30 Oct 2024 06:42:40 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'551'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-10-30 01:42:40,920 - INFO - HTTP Request: POST https://api.telegram.org/bot7867694458:AAEFLZjWPyd1p640mHENnBt479WRYfSavWg/sendVideo "HTTP/1.1 200 OK"
+2024-10-30 01:42:40,920 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-30 01:42:40,920 - DEBUG - receive_response_body.complete
+2024-10-30 01:42:40,920 - DEBUG - response_closed.started
+2024-10-30 01:42:40,920 - DEBUG - response_closed.complete
+2024-10-30 01:42:40,920 - DEBUG - Message(caption='From r/girlsfinishingthejob: Feed Me, Please\nUpvotes: 128', channel_chat_created=False, chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), date=datetime.datetime(2024, 10, 30, 6, 42, 40, tzinfo=<UTC>), delete_chat_photo=False, group_chat_created=False, message_id=101, sender_chat=Chat(id=-1002490380283, title='Reddit_Pic_Stream', type=<ChatType.CHANNEL>), supergroup_chat_created=False, video=Video(duration=6, file_id='BAACAgQAAyEGAASUcC_7AAM7ZyHRMunuXSUV8cT3VoJZWjOtEsoAArgGAAJrkhVRN_Of1wz1eU82BA', file_name='OvalFoolishIrukandjijellyfish.mp4', file_size=2888385, file_unique_id='AgADuAYAAmuSFVE', height=1080, mime_type='video/mp4', width=1920))
+2024-10-30 01:42:40,921 - DEBUG - Exiting: send_video
+2024-10-30 01:42:40,921 - DEBUG - close.started
+2024-10-30 01:42:40,921 - DEBUG - close.complete
+2024-10-30 01:42:40,921 - DEBUG - This Bot is already shut down. Returning.
+2024-10-30 01:42:40,921 - DEBUG - Shut down of Updater complete
+2024-10-30 01:42:40,921 - INFO - Successfully sent video to Telegram
+2024-10-30 01:42:40,922 - INFO - Successfully processed and recorded post 1gertjn
+2024-10-30 01:42:40,923 - INFO - Updated last_check for girlsfinishingthejob
+2024-10-30 01:42:40,923 - INFO - Job "send_to_telegram (trigger: interval[0:01:00], next run at: 2024-10-30 01:43:25 CDT)" executed successfully

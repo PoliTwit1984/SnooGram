@@ -1,0 +1,347 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 850px) {
+  .App {
+    padding: 15px;
+  }
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.app-logo {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+  transition: filter 0.3s ease;
+}
+
+.app-logo:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+}
+
+@media (max-width: 600px) {
+  .app-logo {
+    max-width: 150px;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.config-form {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 8px 8px 16px var(--shadow-color),
+              -8px -8px 16px var(--highlight-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 15px;
+  background: var(--bg-primary);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--text-primary);
+  box-shadow: inset 4px 4px 8px var(--shadow-color),
+              inset -4px -4px 8px var(--highlight-color);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px var(--shadow-color),
+              inset -2px -2px 4px var(--highlight-color);
+}
+
+.search-container {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border: none;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 8px 8px 16px var(--shadow-color);
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--highlight-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: var(--highlight-color);
+}
+
+.subscribers {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  padding-left: 15px;
+}
+
+button {
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 48px;
+  box-shadow: 4px 4px 8px var(--shadow-color),
+              -4px -4px 8px var(--highlight-color);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+button:disabled {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+  box-shadow: inset 2px 2px 4px var(--shadow-color),
+              inset -2px -2px 4px var(--highlight-color);
+}
+
+button:hover:not(:disabled) {
+  background: var(--accent-blue-hover);
+  transform: translateY(-1px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 4px var(--shadow-color),
+              -2px -2px 4px var(--highlight-color);
+}
+
+.configs {
+  margin-top: 40px;
+}
+
+.configs h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px var(--shadow-color);
+}
+
+.config-list {
+  display: grid;
+  gap: 30px;
+}
+
+.config-item {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 8px 8px 16px var(--shadow-color),
+              -8px -8px 16px var(--highlight-color);
+  border: 1px solid var(--highlight-color);
+}
+
+@media (max-width: 600px) {
+  .config-item {
+    padding: 20px;
+  }
+}
+
+.config-info h3 {
+  margin: 0 0 15px 0;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.config-info p {
+  margin: 10px 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.config-actions {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .config-actions {
+    flex-direction: column;
+  }
+  
+  .config-actions button {
+    width: 100%;
+  }
+}
+
+/* Style for Edit and Disable buttons */
+.config-actions button:nth-child(1),
+.config-actions button:nth-child(2) {
+  background: var(--accent-blue);
+}
+
+.config-actions button:nth-child(1):hover,
+.config-actions button:nth-child(2):hover {
+  background: var(--accent-blue-hover);
+}
+
+/* Style for Send Now button */
+.config-actions button:nth-child(3) {
+  background: var(--accent-orange);
+}
+
+.config-actions button:nth-child(3):hover {
+  background: var(--accent-orange-hover);
+}
+
+/* Style for Delete button */
+.config-actions button:last-child {
+  background: var(--danger);
+}
+
+.config-actions button:last-child:hover {
+  background: var(--danger-hover);
+}
+
+.edit-form {
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: inset 4px 4px 8px var(--shadow-color),
+              inset -4px -4px 8px var(--highlight-color);
+}
+
+.edit-form select,
+.edit-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: var(--bg-primary);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--text-primary);
+  box-shadow: inset 4px 4px 8px var(--shadow-color),
+              inset -4px -4px 8px var(--highlight-color);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.edit-actions button {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* Style for Save button */
+.edit-actions button:first-child {
+  background: var(--accent-blue);
+}
+
+.edit-actions button:first-child:hover {
+  background: var(--accent-blue-hover);
+}
+
+/* Style for Cancel button */
+.edit-actions button:last-child {
+  background: var(--text-secondary);
+}
+
+.edit-actions button:last-child:hover {
+  background: var(--text-secondary);
+  opacity: 0.9;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+input:disabled,
+select:disabled {
+  background-color: var(--bg-secondary);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
