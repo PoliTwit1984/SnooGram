@@ -15,6 +15,23 @@ function App() {
   });
   const [isAdding, setIsAdding] = useState(false);
   const [sendingNow, setSendingNow] = useState(null);
+  const [error, setError] = useState(null);
+
+  const fetchConfigs = async () => {
+    try {
+      const response = await fetch('http://localhost:8888/api/configs');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log('Received configurations:', data);
+      setConfigs(data);
+      setError(null);
+    } catch (error) {
+      console.error('Error fetching configurations:', error);
+      setError(error.message);
+    }
+  };
 
   useEffect(() => {
     fetchConfigs();
@@ -25,24 +42,26 @@ function App() {
   useEffect(() => {
     if (searchTerm.length > 2) {
       fetch(`http://localhost:8888/api/subreddits/search?q=${searchTerm}`)
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then(data => {
           setSearchResults(data);
           setShowDropdown(true);
+          setError(null);
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+          console.error('Error searching subreddits:', error);
+          setError(error.message);
+        });
     } else {
       setSearchResults([]);
       setShowDropdown(false);
     }
   }, [searchTerm]);
-
-  const fetchConfigs = () => {
-    fetch('http://localhost:8888/api/configs')
-      .then(response => response.json())
-      .then(data => setConfigs(data))
-      .catch(error => console.error('Error:', error));
-  };
 
   const handleSubredditSelect = (subreddit) => {
     setSearchTerm(subreddit.name);
@@ -52,6 +71,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsAdding(true);
+    setError(null);
     const config = {
       subreddit_name: searchTerm.replace(/^r\//, ''),
       filter_type: filterType,
@@ -66,47 +86,69 @@ function App() {
         },
         body: JSON.stringify(config)
       });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       await response.json();
       setSearchTerm('');
       setFilterType('top_day');
       setFrequency(60);
       fetchConfigs();
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error adding configuration:', error);
+      setError(error.message);
     } finally {
       setIsAdding(false);
     }
   };
 
-  const handleDelete = (configId) => {
-    fetch(`http://localhost:8888/api/configs/${configId}`, {
-      method: 'DELETE',
-    })
-      .then(() => fetchConfigs())
-      .catch(error => console.error('Error:', error));
+  const handleDelete = async (configId) => {
+    try {
+      const response = await fetch(`http://localhost:8888/api/configs/${configId}`, {
+        method: 'DELETE',
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      fetchConfigs();
+      setError(null);
+    } catch (error) {
+      console.error('Error deleting configuration:', error);
+      setError(error.message);
+    }
   };
 
-  const handleToggle = (configId) => {
-    fetch(`http://localhost:8888/api/configs/${configId}/toggle`, {
-      method: 'POST',
-    })
-      .then(() => fetchConfigs())
-      .catch(error => console.error('Error:', error));
+  const handleToggle = async (configId) => {
+    try {
+      const response = await fetch(`http://localhost:8888/api/configs/${configId}/toggle`, {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      fetchConfigs();
+      setError(null);
+    } catch (error) {
+      console.error('Error toggling configuration:', error);
+      setError(error.message);
+    }
   };
 
   const handleSendNow = async (configId) => {
     setSendingNow(configId);
+    setError(null);
     try {
       const response = await fetch(`http://localhost:8888/api/configs/${configId}/send-now`, {
         method: 'POST',
       });
       if (!response.ok) {
-        throw new Error('Failed to send now');
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
       console.log('Send now successful:', data);
     } catch (error) {
       console.error('Error sending now:', error);
+      setError(error.message);
     } finally {
       setSendingNow(null);
     }
@@ -128,24 +170,30 @@ function App() {
     });
   };
 
-  const handleSaveEdit = (configId) => {
-    fetch(`http://localhost:8888/api/configs/${configId}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(editForm)
-    })
-      .then(response => response.json())
-      .then(() => {
-        setEditingConfig(null);
-        setEditForm({
-          filter_type: '',
-          frequency: ''
-        });
-        fetchConfigs();
-      })
-      .catch(error => console.error('Error:', error));
+  const handleSaveEdit = async (configId) => {
+    setError(null);
+    try {
+      const response = await fetch(`http://localhost:8888/api/configs/${configId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(editForm)
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      await response.json();
+      setEditingConfig(null);
+      setEditForm({
+        filter_type: '',
+        frequency: ''
+      });
+      fetchConfigs();
+    } catch (error) {
+      console.error('Error saving configuration:', error);
+      setError(error.message);
+    }
   };
 
   return (
@@ -154,6 +202,12 @@ function App() {
         <img src="/SnooGramLogo.png" alt="SnooGram Logo" className="app-logo" />
       </div>
       <h1>SnooGram</h1>
+      
+      {error && (
+        <div className="error-message">
+          Error: {error}
+        </div>
+      )}
       
       <form onSubmit={handleSubmit} className="config-form">
         <div className="form-group">

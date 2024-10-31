@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 from db_operations import DatabaseOperations
 from datetime import datetime, timedelta
@@ -15,6 +15,7 @@ import requests
 from urllib.parse import urlparse
 import hashlib
 from config import Config
+import traceback
 
 # Set up logging with rotation
 log_handler = RotatingFileHandler(
@@ -33,7 +34,14 @@ def create_app():
     Config.print_config()
     
     app = Flask(__name__)
-    CORS(app)
+    # Enable CORS for all routes and origins
+    CORS(app, resources={
+        r"/*": {
+            "origins": "*",
+            "methods": ["GET", "POST", "PUT", "DELETE"],
+            "allow_headers": ["Content-Type"]
+        }
+    })
     return app
 
 app = create_app()
@@ -308,8 +316,29 @@ def search_subreddits():
 
 @app.route('/api/configs', methods=['GET'])
 def get_configs():
-    configs = DatabaseOperations.get_all_configs()
-    return jsonify(configs)
+    logging.info("GET /api/configs - Fetching all subreddit configurations...")
+    try:
+        if not cosmos_db.is_initialized:
+            logging.error("Cosmos DB is not initialized")
+            cosmos_db._initialize()
+            if not cosmos_db.is_initialized:
+                logging.error("Failed to initialize Cosmos DB")
+                return jsonify({'error': 'Database connection failed'}), 500
+
+        configs = DatabaseOperations.get_all_configs()
+        logging.info(f"Successfully retrieved {len(configs)} configurations")
+        for config in configs:
+            logging.info(f"Config: {config}")
+        
+        response = make_response(jsonify(configs))
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'GET')
+        return response
+    except Exception as e:
+        logging.error(f"Error fetching configurations: {str(e)}")
+        logging.error(traceback.format_exc())
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/configs', methods=['POST'])
 def add_config():
@@ -415,7 +444,17 @@ def get_recent_sent_posts():
 if __name__ == '__main__':
     os.makedirs('downloads/pics', exist_ok=True)
     os.makedirs('downloads/videos', exist_ok=True)
+    
+    # Initialize Cosmos DB
+    if not cosmos_db.is_initialized:
+        cosmos_db._initialize()
+        if not cosmos_db.is_initialized:
+            logging.error("Failed to initialize Cosmos DB")
+            exit(1)
+    
+    # Schedule active configs
     active_configs = [c for c in DatabaseOperations.get_all_configs() if c['is_active']]
     for config in active_configs:
         schedule_subreddit(config)
+    
     app.run(port=8888, debug=True)
